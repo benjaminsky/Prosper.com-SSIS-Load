@@ -21,7 +21,13 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Key" type="xsd:string" />
+										<xsd:element name="Key" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="ListingKey"  >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -614,7 +620,7 @@
 										<xsd:element name="HistoricalInterestRatesTable" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
-													<xsd:maxLength value="6000"/>
+													<xsd:maxLength value="9000"/>
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
