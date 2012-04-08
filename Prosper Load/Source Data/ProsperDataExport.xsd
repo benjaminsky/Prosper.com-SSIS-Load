@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Prosper Data Export - Schema - Version: 1.0 - Generated: 2012-04-08T02:34:08 -->
+<!-- Subject to the Prosper API Services Terms of Use Agreement located at http://www.prosper.com/tools/APITermsOfUse.aspx -->
+<!-- Note: The sql namespace (urn:schemas-microsoft-com:xml-sql) is optional and can be removed along with its references (sql:*) -->
+<xsd:schema id="ProsperDataExportSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sql="urn:schemas-microsoft-com:mapping-schema">
+	<xsd:element name="ProsperDataExport" sql:is-constant="1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Bids" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Bid" minOccurs="0" maxOccurs="unbounded" sql:relation="[Bid]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Amount" type="xsd:decimal" />
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="Key" type="xsd:string" />
+										<xsd:element name="ListingKey" type="xsd:string" />
+										<xsd:element name="ListingStatus" type="xsd:string" />
+										<xsd:element name="MemberKey" type="xsd:string" />
+										<xsd:element name="MinimumRate" type="xsd:decimal" />
+										<xsd:element name="MinimumYield" type="xsd:decimal" />
+										<xsd:element name="ParticipationAmount" type="xsd:decimal" />
+										<xsd:element name="Status" type="xsd:string" />
+										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Categories" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Category" minOccurs="0" maxOccurs="unbounded" sql:relation="[Category]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CategoryKey" type="xsd:string" />
+										<xsd:element name="CategoryLevel" type="xsd:integer" />
+										<xsd:element name="Hierarchy" type="xsd:string" />
+										<xsd:element name="Key" type="xsd:string" />
+										<xsd:element name="Name" type="xsd:string" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Groups" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Group" minOccurs="0" maxOccurs="unbounded" sql:relation="[Group]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ApprovalDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="CategoryKeys" type="xsd:string" />
+										<xsd:element name="City" type="xsd:string" />
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="Description" type="xsd:string" />
+										<xsd:element name="GroupLeaderRewardPercentageOfBase" type="xsd:decimal" />
+										<xsd:element name="GroupRating" type="xsd:string" />
+										<xsd:element name="Images" type="xsd:string" />
+										<xsd:element name="IsAcceptingNewMembers" type="xsd:boolean" />
+										<xsd:element name="Key" type="xsd:string" />
+										<xsd:element name="Links" type="xsd:string" />
+										<xsd:element name="ListingReviewRequirement" type="xsd:string" />
+										<xsd:element name="MemberKey" type="xsd:string" />
+										<xsd:element name="Name" type="xsd:string" />
+										<xsd:element name="ShortDescription" type="xsd:string" />
+										<xsd:element name="ShortName" type="xsd:string" />
+										<xsd:element name="State" type="xsd:string" />
+										<xsd:element name="Status" type="xsd:string" />
+										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Listings" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Listing" minOccurs="0" maxOccurs="unbounded" sql:relation="[Listing]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="AmountFunded">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="AmountRemaining" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="AmountRequested" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BankDraftFeeAnnualRate">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BidCount" type="xsd:integer" />
+										<xsd:element name="BidMaximumRate" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BorrowerCity" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="32"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BorrowerMaximumRate"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BorrowerRate">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BorrowerState" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Category" type="xsd:integer" />
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="CreditGrade" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ProsperRating" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="50"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="DebtToIncomeRatio"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Description" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="5000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Duration" type="xsd:integer" />
+										<xsd:element name="EndDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="FundingOption" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="50"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="GroupKey" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="GroupLeaderRewardRate"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="HasVerifiedBankAccount" type="xsd:integer" />
+										<xsd:element name="Images" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="IsBorrowerHomeowner" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Key" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="LenderRate"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ListingNumber" type="xsd:integer" />
+										<xsd:element name="MemberKey" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="PercentFunded"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="StartDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="Status" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="50"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Title" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="255"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="ProductSpecID" type="xsd:integer" />
+										<xsd:element name="LoanTermInMonths" type="xsd:integer" />
+										<xsd:element name="Term" type="xsd:integer" />
+										<xsd:element name="EstimatedLoss"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="LenderYield"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="EffectiveYield"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="EstimatedReturn"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="VerificationStage" type="xsd:integer" />
+										<xsd:element name="ActiveProsperLoans" type="xsd:integer" />
+										<xsd:element name="TotalProsperLoans" type="xsd:integer" />
+										<xsd:element name="ProsperPrincipalBorrowed"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ProsperPrincipalOutstanding"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="OnTimeProsperPayments" type="xsd:integer" />
+										<xsd:element name="ProsperPaymentsLessThanOneMonthLate" type="xsd:integer" />
+										<xsd:element name="ProsperPaymentsOneMonthPlusLate" type="xsd:integer" />
+										<xsd:element name="TotalProsperPaymentsBilled" type="xsd:integer" />
+										<xsd:element name="ProsperScore" type="xsd:integer" />
+										<xsd:element name="CreditScoreRangeLower" type="xsd:integer" />
+										<xsd:element name="CreditScoreRangeUpper" type="xsd:integer" />
+										<xsd:element name="MonthlyLoanPayment"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Loans" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Loan" minOccurs="0" maxOccurs="unbounded" sql:relation="[Loan]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="AgeInMonths" type="xsd:integer" />
+										<xsd:element name="AmountBorrowed" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="BorrowerRate" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="CreditGrade"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="2"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ProsperRating"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="50"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="DebtToIncomeRatio" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="11"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="GroupKey" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Key" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="LenderRate" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:decimal">
+													<xsd:totalDigits value="6"/>
+													<xsd:fractionDigits value="5"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ListingKey"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="23"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="OriginationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="Status"  >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="50"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Term" type="xsd:integer" />
+										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Marketplaces" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Marketplace" minOccurs="0" maxOccurs="unbounded" sql:relation="[Marketplace]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="GroupsCountToDate" type="xsd:integer" />
+										<xsd:element name="HistoricalInterestRatesTable" type="xsd:string" />
+										<xsd:element name="LoansClosedCountToDate" type="xsd:integer" />
+										<xsd:element name="MemberBorrowersCountToDate" type="xsd:integer" />
+										<xsd:element name="MemberGroupLeadersCountToDate" type="xsd:integer" />
+										<xsd:element name="MemberLendersCountToDate" type="xsd:integer" />
+										<xsd:element name="MemberRegistrationsCountToDate" type="xsd:integer" />
+										<xsd:element name="PrincipalClosedAmountToDate" type="xsd:decimal" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Members" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Member" minOccurs="0" maxOccurs="unbounded" sql:relation="[Member]">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="City" type="xsd:string" />
+										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+										<xsd:element name="Description" type="xsd:string" />
+										<xsd:element name="Endorsements" type="xsd:string" />
+										<xsd:element name="FriendMemberKeys" type="xsd:string" />
+										<xsd:element name="GroupKey" type="xsd:string" />
+										<xsd:element name="Images" type="xsd:string" />
+										<xsd:element name="Key" type="xsd:string" />
+										<xsd:element name="Roles" type="xsd:string" />
+										<xsd:element name="ScreenName" type="xsd:string" />
+										<xsd:element name="State" type="xsd:string" />
+										<xsd:element name="SupportedGroupKeys" type="xsd:string" />
+										<xsd:element name="WatchListingKeys" type="xsd:string" />
+										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

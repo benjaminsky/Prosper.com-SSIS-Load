@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "Prosper Load", "Prosper Load\Prosper Load.dtproj", "{37B7C859-39FD-4E1F-AAA9-881AE39C0073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37B7C859-39FD-4E1F-AAA9-881AE39C0073}.Development|Default.ActiveCfg = Development
+		{37B7C859-39FD-4E1F-AAA9-881AE39C0073}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
