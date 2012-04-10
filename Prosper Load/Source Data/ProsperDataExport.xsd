@@ -150,7 +150,7 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Description" base="xsd:string" />
+										<xsd:element name="Description" type="xsd:string" />
 										<xsd:element name="GroupLeaderRewardPercentageOfBase" type="xsd:decimal" />
 										<xsd:element name="GroupRating" >
 											<xsd:simpleType>
@@ -159,7 +159,7 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Images" base="xsd:string" />
+										<xsd:element name="Images" type="xsd:string" />
 										<xsd:element name="IsAcceptingNewMembers" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -174,7 +174,7 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Links" base="xsd:string" />
+										<xsd:element name="Links" type="xsd:string" />
 										<xsd:element name="ListingReviewRequirement" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -332,7 +332,7 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Description" base="xsd:string" />
+										<xsd:element name="Description" type="xsd:string" />
 										<xsd:element name="Duration" type="xsd:integer" />
 										<xsd:element name="EndDate" type="xsd:dateTime" sql:datatype="dateTime" />
 										<xsd:element name="FundingOption" >
@@ -358,7 +358,7 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="HasVerifiedBankAccount" type="xsd:integer" />
-										<xsd:element name="Images" base="xsd:string" />
+										<xsd:element name="Images" type="xsd:string" />
 										<xsd:element name="IsBorrowerHomeowner" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -587,7 +587,7 @@
 									<xsd:sequence>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
 										<xsd:element name="GroupsCountToDate" type="xsd:integer" />
-										<xsd:element name="HistoricalInterestRatesTable" base="xsd:string" />											
+										<xsd:element name="HistoricalInterestRatesTable" type="xsd:string" />											
 										<xsd:element name="LoansClosedCountToDate" type="xsd:integer" />
 										<xsd:element name="MemberBorrowersCountToDate" type="xsd:integer" />
 										<xsd:element name="MemberGroupLeadersCountToDate" type="xsd:integer" />
@@ -614,11 +614,11 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Description" base="xsd:string" />
+										<xsd:element name="Description" type="xsd:string" />
 											
-										<xsd:element name="Endorsements" base="xsd:string" />
+										<xsd:element name="Endorsements" type="xsd:string" />
 											
-										<xsd:element name="FriendMemberKeys" base="xsd:string" />
+										<xsd:element name="FriendMemberKeys" type="xsd:string" />
 											
 										<xsd:element name="GroupKey" >
 											<xsd:simpleType>
@@ -627,7 +627,7 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Images" base="xsd:string" />
+										<xsd:element name="Images" type="xsd:string" />
 											<
 										<xsd:element name="Key" >
 											<xsd:simpleType>
@@ -657,9 +657,9 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="SupportedGroupKeys" base="xsd:string" />
+										<xsd:element name="SupportedGroupKeys" type="xsd:string" />
 											
-										<xsd:element name="WatchListingKeys" base="xsd:string" />
+										<xsd:element name="WatchListingKeys" type="xsd:string" />
 										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
 									</xsd:sequence>
 								</xsd:complexType>
