@@ -21,13 +21,7 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Key" >
-											<xsd:simpleType>
-												<xsd:restriction base="xsd:string">
-													<xsd:maxLength value="23"/>
-												</xsd:restriction>
-											</xsd:simpleType>
-										</xsd:element>
+										<xsd:element name="Key" type="xsd:string" />
 										<xsd:element name="ListingKey"  >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -150,7 +144,13 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Description" type="xsd:string" />
+										<xsd:element name="Description" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="5000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="GroupLeaderRewardPercentageOfBase" type="xsd:decimal" />
 										<xsd:element name="GroupRating" >
 											<xsd:simpleType>
@@ -159,7 +159,13 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Images" type="xsd:string" />
+										<xsd:element name="Images" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="IsAcceptingNewMembers" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -174,7 +180,13 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Links" type="xsd:string" />
+										<xsd:element name="Links" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="2000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="ListingReviewRequirement" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -332,7 +344,13 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Description" type="xsd:string" />
+										<xsd:element name="Description" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="5000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="Duration" type="xsd:integer" />
 										<xsd:element name="EndDate" type="xsd:dateTime" sql:datatype="dateTime" />
 										<xsd:element name="FundingOption" >
@@ -358,7 +376,13 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="HasVerifiedBankAccount" type="xsd:integer" />
-										<xsd:element name="Images" type="xsd:string" />
+										<xsd:element name="Images" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="IsBorrowerHomeowner" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -587,7 +611,13 @@
 									<xsd:sequence>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
 										<xsd:element name="GroupsCountToDate" type="xsd:integer" />
-										<xsd:element name="HistoricalInterestRatesTable" type="xsd:string" />											
+										<xsd:element name="HistoricalInterestRatesTable" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="6000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="LoansClosedCountToDate" type="xsd:integer" />
 										<xsd:element name="MemberBorrowersCountToDate" type="xsd:integer" />
 										<xsd:element name="MemberGroupLeadersCountToDate" type="xsd:integer" />
@@ -614,12 +644,27 @@
 											</xsd:simpleType>
 										</xsd:element>
 										<xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
-										<xsd:element name="Description" type="xsd:string" />
-											
-										<xsd:element name="Endorsements" type="xsd:string" />
-											
-										<xsd:element name="FriendMemberKeys" type="xsd:string" />
-											
+										<xsd:element name="Description" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="Endorsements" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="8000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="FriendMemberKeys" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="GroupKey" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -627,8 +672,13 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="Images" type="xsd:string" />
-											<
+										<xsd:element name="Images" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="Key" >
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -657,9 +707,20 @@
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										<xsd:element name="SupportedGroupKeys" type="xsd:string" />
-											
-										<xsd:element name="WatchListingKeys" type="xsd:string" />
+										<xsd:element name="SupportedGroupKeys" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="WatchListingKeys" >
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:maxLength value="4000"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
 										<xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
 									</xsd:sequence>
 								</xsd:complexType>
