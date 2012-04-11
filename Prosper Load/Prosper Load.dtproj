@@ -11,8 +11,8 @@
   <Dimensions />
   <DataSources>
     <ProjectItem>
-      <Name>Ben's PC.ds</Name>
-      <FullPath>Ben's PC.ds</FullPath>
+      <Name>ProsperLanding.ds</Name>
+      <FullPath>ProsperLanding.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews />
@@ -28,7 +28,7 @@
           <ConfigurationSetting>
             <Id>Ben's PC</Id>
             <Name>Ben's PC</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=benc-pc;Password=;User ID=;Initial Catalog=Prosper</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=benc-pc;Password=;User ID=;Initial Catalog=ProsperLanding</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings />
@@ -52,6 +52,11 @@
     <DtsPackage FormatVersion="3">
       <Name>CSV Load.dtsx</Name>
       <FullPath>CSV Load.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>XML Reader Load.dtsx</Name>
+      <FullPath>XML Reader Load.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>

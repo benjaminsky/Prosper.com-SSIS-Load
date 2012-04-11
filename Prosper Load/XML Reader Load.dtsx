@@ -1,0 +1,1926 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">benc-PC\benc</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">BENC-PC</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">4/11/2012 4:40:45 PM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">5</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">18</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{CB29B791-E849-414D-968D-256F26ED446A}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">ProsperLanding</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A4D136E5-705D-460E-8DDC-2BC675E9099A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property><DTS:Password DTS:Name="Password" Sensitive="1" Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfwZtv8qmA02sU62DxQKAcgAAAAAIAAAARABUAFMAAAADZgAAqAAAABAAAAARV1Fj+uwASOTZFPENwzw+AAAAAASAAACgAAAAEAAAANqDw410/XHeqLlDM6ihwCQgAAAATN9zvExbtsRviufYW7zW4Ab9oZOTEh5EGA4ldx8zwvEUAAAAdqQBArhd3E1LXuP+tnoEnx57KiE</DTS:Password>
+<DTS:Property DTS:Name="ConnectionString">Data Source=benc-pc;User ID=SSIS;Initial Catalog=ProsperLanding;Provider=SQLNCLI10.1;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.0.2531.0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">6789</DTS:Property><DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">RowCount</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{16F2F060-5FC2-4F62-AC3E-3947CD886CAB}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">XMLFileName</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7CFD44F8-FE0B-4A6D-B8E4-AD0A653B8025}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" DTS:ThreadHint="0">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Truncate Staging Tables</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{33c14e84-21ff-4517-a96d-3d5d367e6b5d}</DTS:Property>
+<DTS:Property DTS:Name="Description">Execute SQL Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{A4D136E5-705D-460E-8DDC-2BC675E9099A}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="DELETE FROM dbo.Loan&#xA;GO&#xA;DELETE FROM dbo.Listing&#xA;GO&#xA;DELETE FROM dbo.Category&#xA;GO&#xA;DELETE FROM dbo.[Group]&#xA;GO&#xA;DELETE FROM dbo.Bid&#xA;GO&#xA;DELETE FROM dbo.Member&#xA;GO&#xA;DELETE FROM dbo.Marketplace&#xA;GO&#xA;DELETE FROM dbo.Group_CategoryKeyMM&#xA;GO&#xA;DELETE FROM dbo.Member_EndorsementMemberMM&#xA;GO&#xA;DELETE FROM dbo.Member_FriendMemberMM&#xA;GO&#xA;DELETE FROM dbo.Member_SupportedGroupMM&#xA;GO&#xA;DELETE FROM dbo.Member_WatchedListingMM&#xA;GO" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="SSIS.Pipeline.2">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v10; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}</DTS:Property>
+<DTS:Property DTS:Name="Description">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Pipeline.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><pipeline id="0" name="pipelineXml" description="pipelineXml" defaultBufferMaxRows="10000" engineThreads="10" defaultBufferSize="10485760" BLOBTempStoragePath="" bufferTempStoragePath="" runInOptimizedMode="true">
+<components>
+<component id="1" name="Script Component" componentClassID="{2E42D45B-F83C-400F-8D77-61DDE6A7DF29}" description="Executes a custom script." localeId="-1" usesDispositions="false" validateExternalMetadata="True" version="4" pipelineVersion="0" contactInfo="Executes a custom script.;Microsoft Corporation; Microsoft SqlServer v10; © 2007 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+<properties>
+<property id="5" name="SourceCode" dataType="System.String" state="cdata" isArray="true" description="Stores the source code of the component" typeConverter="" UITypeEditor="" containsID="false" expressionType="None"><arrayElements arrayElementCount="20"><arrayElement dataType="System.String"><![CDATA[\main.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[/* Microsoft SQL Server Integration Services Script Component
+*  Write scripts using Microsoft Visual C# 2008.
+*  ScriptMain is the entry point class of the script.*/
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using System.IO;
+using System.Xml;
+using System.Linq;
+using System.Xml.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    
+    public override void PreExecute()
+    {
+        base.PreExecute();       
+    }
+
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+          Add your code here for postprocessing or remove if not needed
+          You can set read/write variables here, for example:
+          Variables.MyIntVar = 100
+        */
+    }
+
+    public override void CreateNewOutputRows()
+    {
+        foreach (var xdata in (from member in X.XmlStreamReader(@"C:\Users\benc\Documents\Visual Studio 2008\Projects\Prosper Load\Prosper Load\Source Data\ProsperDataExportDailyDiff.xml", "Member")                               
+                               select new
+                               {
+                                   City = member.Element("City").Value,
+                                   CreationDate = member.Element("CreationDate").Value,
+                                   Description = member.Element("Description").Value,
+                                   Endorsements = member.Element("Endorsements").Value,
+                                   FriendMemberKeys = member.Element("FriendMemberKeys").Value,
+                                   GroupKey = member.Element("GroupKey").Value,
+                                   Images = member.Element("Images").Value,
+                                   Key = member.Element("Key").Value,
+                                   Roles = member.Element("Roles").Value,
+                                   ScreenName = member.Element("ScreenName").Value,
+                                   State = member.Element("State").Value,
+                                   SupportedGroupKeys = member.Element("SupportedGroupKeys").Value,
+                                   WatchListingKeys = member.Element("WatchListingKeys").Value,
+                                   ModifiedDate = member.Element("ModifiedDate").Value
+                               }
+                               ))
+        {
+            MembersBuffer.AddRow();
+            MembersBuffer.City = xdata.City;
+            MembersBuffer.CreationDate = Convert.ToDateTime(xdata.CreationDate);
+            MembersBuffer.Description.AddBlobData(ASCIIEncoding.ASCII.GetBytes(xdata.Description));
+            MembersBuffer.Endorsements.AddBlobData(ASCIIEncoding.ASCII.GetBytes(xdata.Endorsements));
+
+            MembersBuffer.GroupKey = xdata.GroupKey;
+            MembersBuffer.Images.AddBlobData(ASCIIEncoding.ASCII.GetBytes(xdata.Images));
+            MembersBuffer.Key = xdata.Key;
+            MembersBuffer.Roles = xdata.Roles;
+            MembersBuffer.ScreenName = xdata.ScreenName;
+            MembersBuffer.Roles = xdata.Roles;
+            MembersBuffer.State = xdata.State;
+            MembersBuffer.ModifiedDate = Convert.ToDateTime(xdata.ModifiedDate);
+
+            if (xdata.Endorsements.Length > 0)
+            {
+                XDocument endorsementDoc = XDocument.Parse("<root>" + xdata.Endorsements + "</root>");
+                
+                foreach (var exdata in (from endorsement in endorsementDoc.Descendants("Endorsement")
+                                        select new
+                                        {
+                                            EndorsementMemberKey = endorsement.Element("MemberKey").Value,
+                                            Testimonial = endorsement.Element("Testimonial").Value,
+                                            CreationDate = endorsement.Element("CreationDate").Value                                            
+                                        }
+                               ))
+                {
+                    EndorsementsBuffer.AddRow();
+
+                    EndorsementsBuffer.CreationDate = Convert.ToDateTime(exdata.CreationDate);
+                    EndorsementsBuffer.EndorsementMemberKey = exdata.EndorsementMemberKey;
+                    EndorsementsBuffer.MemberKey = xdata.Key;
+                    EndorsementsBuffer.Testimonial.AddBlobData(ASCIIEncoding.ASCII.GetBytes(exdata.Testimonial));
+                }
+            }
+        }
+    }
+
+}
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\properties\resources.resx]]></arrayElement><arrayElement dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\properties\settings.designer.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Settings.get_Default():SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Sett" +
+    "ings")]
+
+namespace SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties
+{
+
+
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\properties\settings.settings]]></arrayElement><arrayElement dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\properties\assemblyinfo.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_2b89b1bbfe8349d687756d4100d00f83.csproj")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_2b89b1bbfe8349d687756d4100d00f83.csproj")]
+[assembly: AssemblyCopyright("Copyright @  2012")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\properties\resources.designer.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties
+{
+
+
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources
+    {
+
+        private static global::System.Resources.ResourceManager resourceMan;
+
+        private static global::System.Globalization.CultureInfo resourceCulture;
+
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources()
+        {
+        }
+
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if ((resourceMan == null))
+                {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_2b89b1bbfe8349d687756d4100d00f83.csproj.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
+                return resourceCulture;
+            }
+            set
+            {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\bufferwrapper.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class MembersBuffer: ScriptBuffer
+
+{
+    public MembersBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes)
+        : base(Buffer, BufferColumnIndexes)
+    {
+    }
+
+    public String City
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool City_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public DateTime CreationDate
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool CreationDate_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public BlobColumn Description
+    {
+        get
+        {
+            return (BlobColumn)Buffer[BufferColumnIndexes[2]];
+        }
+    }
+    public bool Description_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public BlobColumn Endorsements
+    {
+        get
+        {
+            return (BlobColumn)Buffer[BufferColumnIndexes[3]];
+        }
+    }
+    public bool Endorsements_IsNull
+    {
+        get
+        {
+            return IsNull(3);
+        }
+    }
+
+    public String GroupKey
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool GroupKey_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public BlobColumn Images
+    {
+        get
+        {
+            return (BlobColumn)Buffer[BufferColumnIndexes[5]];
+        }
+    }
+    public bool Images_IsNull
+    {
+        get
+        {
+            return IsNull(5);
+        }
+    }
+
+    public String Key
+    {
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool Key_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Roles
+    {
+        set
+        {
+            this[7] = value;
+        }
+    }
+    public bool Roles_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ScreenName
+    {
+        set
+        {
+            this[8] = value;
+        }
+    }
+    public bool ScreenName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(8);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String State
+    {
+        set
+        {
+            this[9] = value;
+        }
+    }
+    public bool State_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(9);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public DateTime ModifiedDate
+    {
+        set
+        {
+            this[10] = value;
+        }
+    }
+    public bool ModifiedDate_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(10);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+
+public class EndorsementsBuffer: ScriptBuffer
+
+{
+    public EndorsementsBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes)
+        : base(Buffer, BufferColumnIndexes)
+    {
+    }
+
+    public String MemberKey
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool MemberKey_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String EndorsementMemberKey
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool EndorsementMemberKey_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public BlobColumn Testimonial
+    {
+        get
+        {
+            return (BlobColumn)Buffer[BufferColumnIndexes[2]];
+        }
+    }
+    public bool Testimonial_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public DateTime CreationDate
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool CreationDate_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\sc_2b89b1bbfe8349d687756d4100d00f83.csproj]]></arrayElement><arrayElement dataType="System.String"><![CDATA[<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{A860303F-1F3F-4691-B57E-529FC101A107};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>SC_2b89b1bbfe8349d687756d4100d00f83.csproj</RootNamespace>
+    <AssemblyName>SC_2b89b1bbfe8349d687756d4100d00f83.csproj</AssemblyName>
+    <ProjectGuid>{04EC04BE-ADA7-4414-BCF2-08A8CF5A3EE5}</ProjectGuid>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- This sections specifies references for the project. -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  -->
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="XmlStreamReader.cs" />
+    <!-- Include the default configuration information and metadata files for the add-in.
+         These files are copied to the build output directory when the project is
+         built, and the path to the configuration file is passed to the add-in on the command
+         line when debugging.
+    -->
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A860303F-1F3F-4691-B57E-529FC101A107}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{C1B21C64-9E6F-4923-A89D-9F958503C1CE}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="SSIS_ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ScriptComponent</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\componentwrapper.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public MembersBuffer MembersBuffer;
+
+    public EndorsementsBuffer EndorsementsBuffer;
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != MembersBuffer)
+        {
+            MembersBuffer.SetEndOfRowset();
+            MembersBuffer = null;
+        }
+
+        if (null != EndorsementsBuffer)
+        {
+            EndorsementsBuffer.SetEndOfRowset();
+            EndorsementsBuffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == 4)
+            {
+                MembersBuffer = new MembersBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]));
+            }
+            if(OutputIDs[Idx] == 78)
+            {
+                EndorsementsBuffer = new EndorsementsBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]));
+            }
+        }
+
+        CreateNewOutputRows();
+
+        FinishOutputs();
+        MarkOutputsFinished();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public IDTSConnectionManager100 ProsperLanding
+    {
+        get
+        {
+            return ParentComponent.ComponentMetaData.RuntimeConnectionCollection.GetObjectByID(13).ConnectionManager;
+        }
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement><arrayElement dataType="System.String"><![CDATA[\xmlstreamreader.cs]]></arrayElement><arrayElement dataType="System.String"><![CDATA[using System;
+using System.Text;
+using System.Linq;
+using System.Xml;
+using System.Xml.Linq;
+using System.Collections.Generic;
+
+
+class X
+{
+    public static IEnumerable<XElement> XmlStreamReader(String filename, string elementName)
+    {
+        using (XmlReader xr = XmlReader.Create(filename))
+        {
+            xr.MoveToContent();
+            while (xr.Read()) //Reads the first element
+            {
+                while (xr.NodeType == XmlNodeType.Element && xr.Name == elementName)
+                {
+                    XElement node = (XElement)XElement.ReadFrom(xr);
+
+                    yield return node;
+                }
+            }
+            xr.Close();
+        }
+    }
+}
+
+]]></arrayElement></arrayElements></property>
+<property id="6" name="BinaryCode" dataType="System.String" state="cdata" isArray="true" description="Stores the binary representation of the component" typeConverter="" UITypeEditor="" containsID="false" expressionType="None"><arrayElements arrayElementCount="2"><arrayElement dataType="System.String"><![CDATA[\bin\release\sc_2b89b1bbfe8349d687756d4100d00f83.csproj.dll]]></arrayElement><arrayElement dataType="System.String"><![CDATA[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
+4gecBwoAAQicBwoAGgicBwoAMwicBwoATgicBwoAaQicBwoAggicBwoAuwibCAoA2wibCB4AgglZ
+CR4AsQlZCR4A9AlZCQoAQgorAQoAfwpsCgoAnAorAQoAoQorAQoAxQqcBw4A8QrbCg4ACgvbCgoA
+HwubCAoAagtXCwoAdgvZBgoAhAtXCwoAkAsrASIAWA1NDQoA9A1sCgoAHQ4MDiIAUQ5NDRoAaw4C
+BwoAkA4rAQoArg4rAQYAxA7xAAoAMRJsCgoATBJsCgoAbxJjEgoAhBLZBiYAWxMrARoA1hMCBxoA
+6BMCByYAERQFFAoAIxQrAQoANhRjEhoAcBQCBwAAAAABAAAAAAABAAEAAQAQADkAAAAFAAEAAQAB
+ABAARwAAAAkABQAGAAEAEABTAAAACQAGAAgAAQAQAF0AAAANAAcACQABABAAawAAAA0ABwAjAAAA
+EAB+AIgACQAHAC8AAAEQAL4AiAARAAkAMwAAABAAxwAAAAkACgA2AAEAEADJAAAACAAKADgAAwEQ
+AEELAAAJAAwAPgAAARAA6w4AAAkAFQBHAAABEACXEgAACQAjAFkABgBHABMABgBTABcABgBdAB8A
+BgBrACMAAQDrATEAAQDrATEAEQBEBngAEQBxBnwAEQC1BpoAEQBiE9UDEQCvE/wDAQAvDEQBAQDj
+DFIBAQDuDFIBBgCHB1kBBgAuDVkBBgCQB1kBBgA8DVkBBgBiDVwBBgBrDUQBIQAYEL4BIQAwEMIB
+IQBYEMsBIQBuENQBIQCFEN0BIQC1EOYBIQDVEO8BIQDmEPgBIQD8EAECIQAWEQoCIQA6ERMCIQBU
+ERwCIQCIESUCIQC4ES4CIQDgEr4BIQAYE8IBIQAwEMsBUCAAAAAAhhhzARsAAQBwIAAAAADGAXkB
+GwABAHIgAAAAAIEAhwEbAAEAqCAAAAAAxgDLAScAAQAOIQAAAADGAdcBGwAEABAhAAAAAIYYcwE1
+AAQAHyEAAAAAhghfAjsABQA9IQAAAACGGHMBNQAFAEwhAAAAAIYYcwFFAAYAViEAAAAAhgiBAk0A
+CABgIQAAAACGCIoCUgAJAHchAAAAAIYIowJXAAoAhiEAAAAAhgi0AlIACwCdIQAAAACGCNcCXQAM
+ALchAAAAAIYI5wJiAAwAwCEAAAAAhgj+Al0ADADaIQAAAACGCA8DYgAMAOMhAAAAAIYIJwNNAAwA
+7SEAAAAAhgg0A1IADQAEIgAAAACGCEgDXQAOAB4iAAAAAIYIUwNiAA4AJyIAAAAAhghlA00ADgAx
+IgAAAACGCG0DUgAPAEgiAAAAAIYIfANNABAAUiIAAAAAhgiGA1IAEQBpIgAAAACGCJcDTQASAHMi
+AAAAAIYIpgNSABMAiiIAAAAAhgi8A00AFACVIgAAAACGCMYDUgAVAK0iAAAAAIYI1wNXABYAvSIA
+AAAAhgjoA1IAFwDVIgAAAACGAAAEGwAYAN0iAAAAAIYABwQbABgA5SIAAAAAhgAWBGIAGADtIgAA
+AACGGHMBRQAYAPciAAAAAIYINQVNABoAASMAAAAAhghDBVIAGwAYIwAAAACGCFgFTQAcACIjAAAA
+AIYIcQVSAB0AOSMAAAAAhgiRBV0AHgBTIwAAAACGCKEFYgAeAFwjAAAAAIYIowJXAB4AayMAAAAA
+hgi0AlIAHwCCIwAAAACGAAAEGwAgAIojAAAAAIYABwQbACAAkiMAAAAAhgAWBGIAIACaIwAAAACD
+GHMBGwAgAKQjAAAAAJMIgQaAACAA3SMAAAAAkwiVBoUAIADkIwAAAACTCKEGigAgAOwjAAAAAJYI
+xQaeACEA/yMAAAAAhhhzARsAIQDzIwAAAACRGDoLFwEhAOQlAAAAAJYAGweoACEACCYAAAAAhhhz
+ARsAIwAQJgAAAADGACsHGwAjABgmAAAAAMYANgcbACMA1C4AAAAAxgDXARsAIwBoMQAAAACGGHMB
+GwAjAEgtAAAAAJEALhO+AyMAgC4AAAAAkQCJE/ADJAAIJAAAAADhAZwLKgElAFwkAAAAAOEB+Qs+
+ASUAZCQAAAAA4QEmDGIAJQBQJQAAAADhCTwMSAElAFglAAAAAOEBlQwbACUAYCUAAAAA4QHADBsA
+JQCgJQAAAADhCQMNVQElAKglAAAAAIYYcwGzACUAxyUAAAAAgQB2DRsAJgAgJgAAAACGGHMBngEm
+AKAmAAAAAIYIJxBNATQAqCYAAAAAhghHEMYBNACwJgAAAACGCNcCzwE0ALgmAAAAAIYI/gLYATQA
+wCYAAAAAhgigEOEBNADIJgAAAACGCMgQ6gE0ANAmAAAAAIYISAPzATQA2CYAAAAAhgj0EPwBNADg
+JgAAAACGCAwRBQI0AOgmAAAAAIYIKxEOAjQA8CYAAAAAhghKERcCNAD4JgAAAACGCHERIAI0AAAn
+AAAAAIYIoxEpAjQACCcAAAAAhgjPETICNAAQJwAAAADGAOARjwE0ANwoAAAAAMYA6RE3AjQAYCoA
+AAAAxgDwEXABNQDSKwAAAACGGHMBnAM1AO8rAAAAAIYI/xJNATgA9ysAAAAAhgiRBcYBOAD/KwAA
+AACGCEcQzwE4AAgsAAAAAMYA4BGPATgAiCwAAAAAxgDpETcCOADoLAAAAADGAPARcAE5AAAAAQBC
+BwAAAgBKBwAAAwBUBwAAAQBcBwAAAQBcBwAAAQBmBwAAAgBtBwAAAQCBBwAAAQCBBwAAAQCBBwAA
+AQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCB
+BwAAAQCBBwAAAQCBBwAAAQCBBwAAAQBmBwAAAgBtBwAAAQCBBwAAAQCBBwAAAQCBBwAAAQCBBwAA
+AQCBBwAAAQCBBwAAAQCBBwAAAQCHBwAAAgCQBwAAAQBIEwAAAQCjEwAAAQDjDAAAAQAiBAAAAgAz
+BAAAAwBUBAAABABzBAAABQD8EQAABgCUBAAABwCtBAAACADCBAAACQDRBAAACgDkBAAACwABBQAA
+DAANEgAADQAgEgAADgAUBQAAAQCBBwAAAQDTBQAAAgAEBgAAAwAzBAAAAQCBBwsABgALAI0ACwAK
+AAsAlQALAJkAaQBzAU0AcQBzAU0AeQBzAU0AgQBzAU0AiQBzAU0AkQBzAU0AmQBzAU0AoQBzAU0A
+qQBzAU0AsQBzAbMAuQBzARsACQBzARsACQAkCbgAEQBzARsACQCbCcIAwQDUCccAyQANCswA0QAb
+CjsAGQBzAUUAGQAxCtIAGQA6CrMA2QBzAU0AGQBmB9gAGQBtB9wAKQBcCuAAGQBlCuUAGQAABBsA
+GQAHBBsAGQAWBGIA4QBzARsA6QCzCu8A6QDOCvYASQBzAfsAAQFzAQcBEQFzARsAIQBzARsADADr
+CzQBGQHrCz4BKQEmDGIAFACJDE0BKQG6DBsAMQHbDBsAKQGJDFUBQQFzARsASQEkDmoBSQE2DnAB
+OQFKDnkBOQFdDoABWQFxDoYBOQF6DoABOQGHDo8BYQGXDpMBOQGjDmIAOQGoDhsAaQFzARsAcQFz
+ARsACQArBxsACQA2BxsAeQFzAYICHAAYEL4BHAAwEMIBHABYEMsBHABuENQBHACFEN0BHAC1EOYB
+HADVEO8BHADmEPgBHAD8EAECHAAWEQoCHAA6ERMCHABUERwCHACIESUCHAC4ES4CiQFzARsAiQF9
+ErMCiQF9Er0CEQDgEY8BlADFBvkClADpEQMDnADFBvkCnADpEQMDpADFBvkCpADpEQMDrADFBvkC
+rADpEQMDtADFBvkCtADpEQMDvADFBvkCvADpEQMDxADFBvkCxADpEQMDzADFBvkCzADpEQMD1ADF
+BvkC1ADpEQMD3ADFBvkC3ADpEQMD5ADFBvkC5ADpEQMD7ADFBvkC7ADpEQMD9ADFBvkC9ADpEQMD
+/ADFBvkC/ADpEQMDlADwEZYDnADwEZYDpADwEZYDrADwEZYDtADwEZYDvADwEZYDxADwEZYDzADw
+EZYD1ADwEZYD3ADwEZYD5ADwEZYD7ADwEZYD9ADwEZYD/ADwEZYDBAHgEr4BBAEYE8IBBAEwEMsB
+oQHcEwwEqQHzExMEYQD7E48BDAFzAZ4BFAFzAZwDHAFzAVAEsQEcFFYEJAHrCzQBLAGJDE0BDAEn
+EE0BDAFHEMYBuQErFLUEwQE/FLsEDAHXAs8BwQFJFMEEQQBSFMcEDAH+AtgBDAHIEOoBDAFIA/MB
+DAH0EPwBDAEMEQUCDAErEQ4CDAFKERcCDAHPETICYQFeFHABYQFpFM0EyQF6FNQEqQGAFNsENAFz
+AVAEPAHrCzQBRAGJDE0BFAFHEM8BFAH/Ek0BFAGRBcYBLgAzAJMFLgA7AI0FLgBTAKoFLgAbAI0F
+LgBbALMFLgAjAI0FLgArAF0FLgALAF0FLgATAI0F4wDzAOoAIQEbAeoAQQEbAeoAQwHDAeoAYQEb
+AeoAYwEbAeoAgwEbAeoAowEbAeoAoQLbAYkCwQLbAYkC4QLbAYkCAQPbAYkCIQPbAYkCQQPbAYkC
+YQPbAYkCgQPbAYkCoQPbAYkCwQPbAYkC4QPbAYkCAQTbAYkCCQQTAQ4BIQTbAYkCKQQTAQ4BQQTb
+AYkCYQTbAYkCgQTbAYkCoQTbAYkCgAcbAeoAoAcbAeoAwAdjAeoA4AdjAeoAIAhjAeoAQAhjAeoA
+gAhjAeoAoAhjAeoA4AhjAeoAwApjAeoA4ApjAeoAAAtjAeoAIAtjAeoAoAtjAeoAwAtjAeoA4Atj
+AeoAvgACAXQBmQHrAnMDsQMbBQMAAQAFAAIABgAYAAcAIAAIACIACwAjAAwAJQANADMAAAByAkAA
+AAAiBGYAAAAnBGoAAAAzBG4AAABABGoAAABUBHMAAABgBGoAAABzBHMAAACABGoAAACUBGYAAACd
+BGoAAACtBHMAAAC0BGoAAADCBGYAAADGBGoAAADRBGYAAADXBGoAAADkBGYAAADvBGoAAAABBWYA
+AAAHBWoAAAAUBW4AAAAhBWoAAAC4BWYAAADCBWoAAADTBWYAAADoBWoAAAAEBnMAAAAQBmoAAAAz
+BG4AAABABGoAAAA0BpAAAACtBpUAAADRBqMAAACEDWEBAADNDWYBAAAiBDwCAAAzBEECAABUBEYC
+AABzBEsCAAD8EVACAACUBFUCAACtBFoCAADCBF8CAADRBGQCAADkBGkCAAABBW4CAAANEnMCAAAg
+EngCAAAUBX0CAADTBTwCAAAEBkECAAAzBEYCAgAHAAMAAQAKAAUAAQALAAcAAQAMAAkAAQANAAsA
+AgAOAA0AAgAPAA8AAgAQABEAAgARABMAAQASABUAAQATABcAAgAUABkAAgAVABsAAQAWAB0AAQAX
+AB8AAQAYACEAAQAZACMAAQAaACUAAQAbACcAAQAcACkAAQAdACsAAQAeAC0AAQAfAC8AAQAkADEA
+AQAlADMAAQAmADUAAQAnADcAAgAoADkAAgApADsAAQAqAD0AAQArAD8AAgAwAEEAAQAyAEMAAgAx
+AEMAAgAzAEUAAgBBAEcAAgBEAEkAAgBIAEsAAgBJAE0AAgBKAE8AAgBLAFEAAgBMAFMAAgBNAFUA
+AgBOAFcAAgBPAFkAAgBQAFsAAgBRAF0AAgBSAF8AAgBTAGEAAgBUAGMAAgBVAGUAAgBaAGcAAgBb
+AGkAAgBcAGsACwB8AEsACwB+AE0ACwCAAE8ACwCCAFEACwCEAFMACwCGAFUACwCIAFcAGwEiAZIC
+ugLEAscCygLNAtAC0wLWAtkC3ALfAuIC5QLoAvECCwMTAxsDIwMrAzMDOwNDA0sDUwNbA2MDawOm
+AxsELgQ2BIYEnQTnBAIFDgUEgAAAAQAAAIQRo3gAAAAAAAD5CAAACgAAAAAAAAAAAAAAAQDUAAAA
+AAACAAAAAAAAAAAAAAAKACIBAAAAAAIAAAAAAAAAAAAAAAoAKwEAAAAACgAAAAAAAAAAAAAAAQCb
+AQAAAAAKAAAAAAAAAAAAAAABAPsBAAAAAAMABQAAAAAAAAAAAAoAAgcAAAAACgAAAAAAAAAAAAAA
+AQA1CQAAAAACAAAAAAAAAAAAAAAKAE0NAAAAAAMABQAAAAAAAAAAAAoATxMAAAAAAAAAAAEAAACM
+FAAACwAJAAAAAAAYAAIPAQAAABgAEA8CAAAAGAAmDwMAAAAYADsPBAAAABgAUQ8FAAAAGABrDwYA
+AAAYAH0PBwAAABgAjQ8IAAAAGACaDwkAAAAYAKkPCgAAABgAvQ8LAAAAGADMDwwAAAAYAOgPDQAA
+ABgAAhAAAAAAGgCtEgEAAAAaAMsSAgAAABoAEA8DAW8EAwH2BAAAAAAAPE1vZHVsZT4AU0NfMmI4
+OWIxYmJmZTgzNDlkNjg3NzU2ZDQxMDBkMDBmODMuY3Nwcm9qLmRsbABVc2VyQ29tcG9uZW50AENv
+bm5lY3Rpb25zAFZhcmlhYmxlcwBNZW1iZXJzQnVmZmVyAEVuZG9yc2VtZW50c0J1ZmZlcgBSZXNv
+dXJjZXMAU0NfMmI4OWIxYmJmZTgzNDlkNjg3NzU2ZDQxMDBkMDBmODMuY3Nwcm9qLlByb3BlcnRp
+ZXMAU2V0dGluZ3MAWABTY3JpcHRNYWluAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWlj
+cm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAU2NyaXB0Q29tcG9uZW50AG1zY29ybGliAFN5
+c3RlbQBPYmplY3QAU2NyaXB0QnVmZmVyAFN5c3RlbS5Db25maWd1cmF0aW9uAEFwcGxpY2F0aW9u
+U2V0dGluZ3NCYXNlAC5jdG9yAEZpbmlzaE91dHB1dHMATWFya091dHB1dHNGaW5pc2hlZABNaWNy
+b3NvZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABQaXBlbGluZUJ1ZmZlcgBQcmltZU91dHB1dABD
+cmVhdGVOZXdPdXRwdXRSb3dzAFBhcmVudENvbXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLkRU
+U1J1bnRpbWVXcmFwAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlJ1bnRpbWUuV3JhcHBlcgBJRFRT
+Q29ubmVjdGlvbk1hbmFnZXIxMDAAZ2V0X1Byb3NwZXJMYW5kaW5nAFByb3NwZXJMYW5kaW5nAHNl
+dF9DaXR5AHNldF9DaXR5X0lzTnVsbABEYXRlVGltZQBzZXRfQ3JlYXRpb25EYXRlAHNldF9DcmVh
+dGlvbkRhdGVfSXNOdWxsAEJsb2JDb2x1bW4AZ2V0X0Rlc2NyaXB0aW9uAGdldF9EZXNjcmlwdGlv
+bl9Jc051bGwAZ2V0X0VuZG9yc2VtZW50cwBnZXRfRW5kb3JzZW1lbnRzX0lzTnVsbABzZXRfR3Jv
+dXBLZXkAc2V0X0dyb3VwS2V5X0lzTnVsbABnZXRfSW1hZ2VzAGdldF9JbWFnZXNfSXNOdWxsAHNl
+dF9LZXkAc2V0X0tleV9Jc051bGwAc2V0X1JvbGVzAHNldF9Sb2xlc19Jc051bGwAc2V0X1NjcmVl
+bk5hbWUAc2V0X1NjcmVlbk5hbWVfSXNOdWxsAHNldF9TdGF0ZQBzZXRfU3RhdGVfSXNOdWxsAHNl
+dF9Nb2RpZmllZERhdGUAc2V0X01vZGlmaWVkRGF0ZV9Jc051bGwAQWRkUm93AFNldEVuZE9mUm93
+c2V0AEVuZE9mUm93c2V0AENpdHkAQ2l0eV9Jc051bGwAQ3JlYXRpb25EYXRlAENyZWF0aW9uRGF0
+ZV9Jc051bGwARGVzY3JpcHRpb24ARGVzY3JpcHRpb25fSXNOdWxsAEVuZG9yc2VtZW50cwBFbmRv
+cnNlbWVudHNfSXNOdWxsAEdyb3VwS2V5AEdyb3VwS2V5X0lzTnVsbABJbWFnZXMASW1hZ2VzX0lz
+TnVsbABLZXkAS2V5X0lzTnVsbABSb2xlcwBSb2xlc19Jc051bGwAU2NyZWVuTmFtZQBTY3JlZW5O
+YW1lX0lzTnVsbABTdGF0ZQBTdGF0ZV9Jc051bGwATW9kaWZpZWREYXRlAE1vZGlmaWVkRGF0ZV9J
+c051bGwAc2V0X01lbWJlcktleQBzZXRfTWVtYmVyS2V5X0lzTnVsbABzZXRfRW5kb3JzZW1lbnRN
+ZW1iZXJLZXkAc2V0X0VuZG9yc2VtZW50TWVtYmVyS2V5X0lzTnVsbABnZXRfVGVzdGltb25pYWwA
+Z2V0X1Rlc3RpbW9uaWFsX0lzTnVsbABNZW1iZXJLZXkATWVtYmVyS2V5X0lzTnVsbABFbmRvcnNl
+bWVudE1lbWJlcktleQBFbmRvcnNlbWVudE1lbWJlcktleV9Jc051bGwAVGVzdGltb25pYWwAVGVz
+dGltb25pYWxfSXNOdWxsAFN5c3RlbS5SZXNvdXJjZXMAUmVzb3VyY2VNYW5hZ2VyAHJlc291cmNl
+TWFuAFN5c3RlbS5HbG9iYWxpemF0aW9uAEN1bHR1cmVJbmZvAHJlc291cmNlQ3VsdHVyZQBnZXRf
+UmVzb3VyY2VNYW5hZ2VyAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAEN1bHR1cmUAZGVmYXVsdElu
+c3RhbmNlAGdldF9EZWZhdWx0AERlZmF1bHQAU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMASUVu
+dW1lcmFibGVgMQBTeXN0ZW0uWG1sLkxpbnEAWEVsZW1lbnQAWG1sU3RyZWFtUmVhZGVyAFByZUV4
+ZWN1dGUAUG9zdEV4ZWN1dGUAT3V0cHV0cwBPdXRwdXRJRHMAQnVmZmVycwBDb21wb25lbnQAQnVm
+ZmVyAEJ1ZmZlckNvbHVtbkluZGV4ZXMAdmFsdWUAZmlsZW5hbWUAZWxlbWVudE5hbWUAU3lzdGVt
+LlJlZmxlY3Rpb24AQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0
+cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRy
+aWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRl
+AEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q3VsdHVyZUF0dHJpYnV0ZQBBc3Nl
+bWJseVZlcnNpb25BdHRyaWJ1dGUAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBDb21w
+aWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRl
+AFNDXzJiODliMWJiZmU4MzQ5ZDY4Nzc1NmQ0MTAwZDAwZjgzLmNzcHJvagBHZXRDb2x1bW5JbmRl
+eGVzAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRFRTUGlwZWxpbmVXcmFwAE1pY3Jvc29mdC5TcWxTZXJ2
+ZXIuRHRzLlBpcGVsaW5lLldyYXBwZXIASURUU0NvbXBvbmVudE1ldGFEYXRhMTAwAGdldF9Db21w
+b25lbnRNZXRhRGF0YQBJRFRTUnVudGltZUNvbm5lY3Rpb25Db2xsZWN0aW9uMTAwAGdldF9SdW50
+aW1lQ29ubmVjdGlvbkNvbGxlY3Rpb24ASURUU1J1bnRpbWVDb25uZWN0aW9uMTAwAEdldE9iamVj
+dEJ5SUQAZ2V0X0Nvbm5lY3Rpb25NYW5hZ2VyAHNldF9JdGVtAFNldE51bGwASW52YWxpZE9wZXJh
+dGlvbkV4Y2VwdGlvbgBnZXRfSXRlbQBJc051bGwAU3lzdGVtLkRpYWdub3N0aWNzAERlYnVnZ2Vy
+Tm9uVXNlckNvZGVBdHRyaWJ1dGUAVHlwZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhh
+bmRsZQBBc3NlbWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLkNvbXBvbmVudE1vZGVsAEVkaXRvckJy
+b3dzYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0
+dHJpYnV0ZQAuY2N0b3IAPFhtbFN0cmVhbVJlYWRlcj5kX18wAFN5c3RlbS5Db2xsZWN0aW9ucwBJ
+RW51bWVyYWJsZQBJRW51bWVyYXRvcmAxAElFbnVtZXJhdG9yAElEaXNwb3NhYmxlAFN5c3RlbS5D
+b2xsZWN0aW9ucy5HZW5lcmljLklFbnVtZXJhYmxlPFN5c3RlbS5YbWwuTGlucS5YRWxlbWVudD4u
+R2V0RW51bWVyYXRvcgBHZXRFbnVtZXJhdG9yAFN5c3RlbS5Db2xsZWN0aW9ucy5JRW51bWVyYWJs
+ZS5HZXRFbnVtZXJhdG9yAE1vdmVOZXh0ADw+Ml9fY3VycmVudABTeXN0ZW0uQ29sbGVjdGlvbnMu
+R2VuZXJpYy5JRW51bWVyYXRvcjxTeXN0ZW0uWG1sLkxpbnEuWEVsZW1lbnQ+LmdldF9DdXJyZW50
+AGdldF9DdXJyZW50AFN5c3RlbS5Db2xsZWN0aW9ucy5JRW51bWVyYXRvci5SZXNldABSZXNldABT
+eXN0ZW0uSURpc3Bvc2FibGUuRGlzcG9zZQBEaXNwb3NlADw+MV9fc3RhdGUAPD5sX19pbml0aWFs
+VGhyZWFkSWQAU3lzdGVtLkNvbGxlY3Rpb25zLklFbnVtZXJhdG9yLmdldF9DdXJyZW50ADw+M19f
+ZmlsZW5hbWUAPD4zX19lbGVtZW50TmFtZQBTeXN0ZW0uWG1sAFhtbFJlYWRlcgA8eHI+NV9fMQA8
+bm9kZT41X18yADw+bV9fRmluYWxseTMAU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuSUVudW1l
+cmF0b3I8U3lzdGVtLlhtbC5MaW5xLlhFbGVtZW50Pi5DdXJyZW50AFN5c3RlbS5Db2xsZWN0aW9u
+cy5JRW51bWVyYXRvci5DdXJyZW50AERlYnVnZ2VySGlkZGVuQXR0cmlidXRlAFN5c3RlbS5UaHJl
+YWRpbmcAVGhyZWFkAGdldF9DdXJyZW50VGhyZWFkAGdldF9NYW5hZ2VkVGhyZWFkSWQAQ3JlYXRl
+AFhtbE5vZGVUeXBlAE1vdmVUb0NvbnRlbnQAWE5vZGUAUmVhZEZyb20AZ2V0X05vZGVUeXBlAGdl
+dF9OYW1lAFN0cmluZwBvcF9FcXVhbGl0eQBSZWFkAENsb3NlAE5vdFN1cHBvcnRlZEV4Y2VwdGlv
+bgBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQA8PmZfX0Fub255bW91c1R5
+cGUwYDE0ADxDaXR5PmpfX1RQYXIAPENyZWF0aW9uRGF0ZT5qX19UUGFyADxEZXNjcmlwdGlvbj5q
+X19UUGFyADxFbmRvcnNlbWVudHM+al9fVFBhcgA8RnJpZW5kTWVtYmVyS2V5cz5qX19UUGFyADxH
+cm91cEtleT5qX19UUGFyADxJbWFnZXM+al9fVFBhcgA8S2V5PmpfX1RQYXIAPFJvbGVzPmpfX1RQ
+YXIAPFNjcmVlbk5hbWU+al9fVFBhcgA8U3RhdGU+al9fVFBhcgA8U3VwcG9ydGVkR3JvdXBLZXlz
+PmpfX1RQYXIAPFdhdGNoTGlzdGluZ0tleXM+al9fVFBhcgA8TW9kaWZpZWREYXRlPmpfX1RQYXIA
+PENpdHk+aV9fRmllbGQAZ2V0X0NpdHkAPENyZWF0aW9uRGF0ZT5pX19GaWVsZABnZXRfQ3JlYXRp
+b25EYXRlADxEZXNjcmlwdGlvbj5pX19GaWVsZAA8RW5kb3JzZW1lbnRzPmlfX0ZpZWxkADxGcmll
+bmRNZW1iZXJLZXlzPmlfX0ZpZWxkAGdldF9GcmllbmRNZW1iZXJLZXlzADxHcm91cEtleT5pX19G
+aWVsZABnZXRfR3JvdXBLZXkAPEltYWdlcz5pX19GaWVsZAA8S2V5PmlfX0ZpZWxkAGdldF9LZXkA
+PFJvbGVzPmlfX0ZpZWxkAGdldF9Sb2xlcwA8U2NyZWVuTmFtZT5pX19GaWVsZABnZXRfU2NyZWVu
+TmFtZQA8U3RhdGU+aV9fRmllbGQAZ2V0X1N0YXRlADxTdXBwb3J0ZWRHcm91cEtleXM+aV9fRmll
+bGQAZ2V0X1N1cHBvcnRlZEdyb3VwS2V5cwA8V2F0Y2hMaXN0aW5nS2V5cz5pX19GaWVsZABnZXRf
+V2F0Y2hMaXN0aW5nS2V5cwA8TW9kaWZpZWREYXRlPmlfX0ZpZWxkAGdldF9Nb2RpZmllZERhdGUA
+VG9TdHJpbmcARXF1YWxzAEdldEhhc2hDb2RlAEZyaWVuZE1lbWJlcktleXMAU3VwcG9ydGVkR3Jv
+dXBLZXlzAFdhdGNoTGlzdGluZ0tleXMARGVidWdnZXJCcm93c2FibGVBdHRyaWJ1dGUARGVidWdn
+ZXJCcm93c2FibGVTdGF0ZQBTeXN0ZW0uVGV4dABTdHJpbmdCdWlsZGVyAEFwcGVuZABFcXVhbGl0
+eUNvbXBhcmVyYDEAPD5mX19Bbm9ueW1vdXNUeXBlMWAzADxFbmRvcnNlbWVudE1lbWJlcktleT5q
+X19UUGFyADxUZXN0aW1vbmlhbD5qX19UUGFyADxFbmRvcnNlbWVudE1lbWJlcktleT5pX19GaWVs
+ZABnZXRfRW5kb3JzZW1lbnRNZW1iZXJLZXkAPFRlc3RpbW9uaWFsPmlfX0ZpZWxkADxDcmVhdGVO
+ZXdPdXRwdXRSb3dzPmJfXzAAbWVtYmVyAFN5c3RlbS5Db3JlAEZ1bmNgMgBDUyQ8PjlfX0NhY2hl
+ZEFub255bW91c01ldGhvZERlbGVnYXRlMgA8Q3JlYXRlTmV3T3V0cHV0Um93cz5iX18xAGVuZG9y
+c2VtZW50AENTJDw+OV9fQ2FjaGVkQW5vbnltb3VzTWV0aG9kRGVsZWdhdGUzAFhOYW1lAG9wX0lt
+cGxpY2l0AFhDb250YWluZXIARWxlbWVudABnZXRfVmFsdWUAU3lzdGVtLkxpbnEARW51bWVyYWJs
+ZQBTZWxlY3QAQ29udmVydABUb0RhdGVUaW1lAEVuY29kaW5nAGdldF9BU0NJSQBHZXRCeXRlcwBB
+ZGRCbG9iRGF0YQBnZXRfTGVuZ3RoAENvbmNhdABYRG9jdW1lbnQAUGFyc2UARGVzY2VuZGFudHMA
+U0NfMmI4OWIxYmJmZTgzNDlkNjg3NzU2ZDQxMDBkMDBmODMuY3Nwcm9qLlByb3BlcnRpZXMuUmVz
+b3VyY2VzLnJlc291cmNlcwAAAACAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBh
+AG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4A
+IABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBh
+AGQALgAAf1MAQwBfADIAYgA4ADkAYgAxAGIAYgBmAGUAOAAzADQAOQBkADYAOAA3ADcANQA2AGQA
+NAAxADAAMABkADAAMABmADgAMwAuAGMAcwBwAHIAbwBqAC4AUAByAG8AcABlAHIAdABpAGUAcwAu
+AFIAZQBzAG8AdQByAGMAZQBzAAATewAgAEMAaQB0AHkAIAA9ACAAACMsACAAQwByAGUAYQB0AGkA
+bwBuAEQAYQB0AGUAIAA9ACAAACEsACAARABlAHMAYwByAGkAcAB0AGkAbwBuACAAPQAgAAAjLAAg
+AEUAbgBkAG8AcgBzAGUAbQBlAG4AdABzACAAPQAgAAArLAAgAEYAcgBpAGUAbgBkAE0AZQBtAGIA
+ZQByAEsAZQB5AHMAIAA9ACAAABssACAARwByAG8AdQBwAEsAZQB5ACAAPQAgAAAXLAAgAEkAbQBh
+AGcAZQBzACAAPQAgAAARLAAgAEsAZQB5ACAAPQAgAAAVLAAgAFIAbwBsAGUAcwAgAD0AIAAAHywA
+IABTAGMAcgBlAGUAbgBOAGEAbQBlACAAPQAgAAAVLAAgAFMAdABhAHQAZQAgAD0AIAAALywAIABT
+AHUAcABwAG8AcgB0AGUAZABHAHIAbwB1AHAASwBlAHkAcwAgAD0AIAAAKywAIABXAGEAdABjAGgA
+TABpAHMAdABpAG4AZwBLAGUAeQBzACAAPQAgAAAjLAAgAE0AbwBkAGkAZgBpAGUAZABEAGEAdABl
+ACAAPQAgAAAFIAB9AAAzewAgAEUAbgBkAG8AcgBzAGUAbQBlAG4AdABNAGUAbQBiAGUAcgBLAGUA
+eQAgAD0AIAAAISwAIABUAGUAcwB0AGkAbQBvAG4AaQBhAGwAIAA9ACAAAAlDAGkAdAB5AAAZQwBy
+AGUAYQB0AGkAbwBuAEQAYQB0AGUAABdEAGUAcwBjAHIAaQBwAHQAaQBvAG4AABlFAG4AZABvAHIA
+cwBlAG0AZQBuAHQAcwAAIUYAcgBpAGUAbgBkAE0AZQBtAGIAZQByAEsAZQB5AHMAABFHAHIAbwB1
+AHAASwBlAHkAAA1JAG0AYQBnAGUAcwAAB0sAZQB5AAALUgBvAGwAZQBzAAAVUwBjAHIAZQBlAG4A
+TgBhAG0AZQAAC1MAdABhAHQAZQAAJVMAdQBwAHAAbwByAHQAZQBkAEcAcgBvAHUAcABLAGUAeQBz
+AAAhVwBhAHQAYwBoAEwAaQBzAHQAaQBuAGcASwBlAHkAcwAAGU0AbwBkAGkAZgBpAGUAZABEAGEA
+dABlAAATTQBlAG0AYgBlAHIASwBlAHkAABdUAGUAcwB0AGkAbQBvAG4AaQBhAGwAAIDxQwA6AFwA
+VQBzAGUAcgBzAFwAYgBlAG4AYwBcAEQAbwBjAHUAbQBlAG4AdABzAFwAVgBpAHMAdQBhAGwAIABT
+AHQAdQBkAGkAbwAgADIAMAAwADgAXABQAHIAbwBqAGUAYwB0AHMAXABQAHIAbwBzAHAAZQByACAA
+TABvAGEAZABcAFAAcgBvAHMAcABlAHIAIABMAG8AYQBkAFwAUwBvAHUAcgBjAGUAIABEAGEAdABh
+AFwAUAByAG8AcwBwAGUAcgBEAGEAdABhAEUAeABwAG8AcgB0AEQAYQBpAGwAeQBEAGkAZgBmAC4A
+eABtAGwAAA1NAGUAbQBiAGUAcgAADTwAcgBvAG8AdAA+AAAPPAAvAHIAbwBvAHQAPgAAF0UAbgBk
+AG8AcgBzAGUAbQBlAG4AdAAAAAAASbxf8+pqtE+cnQdnK28fOAAIiYRdzYCAzJEIt3pcVhk04IkD
+BhIMAwYSEAMgAAEDBhIUAwYSGAkgAwEIHQgdEhUDBhIFBSABARIFBCAAEhkEKAASGQcgAgESFR0I
+BCABAQ4EIAEBAgUgAQERHQQgABIhAyAAAgMoAA4DKAACBCgAER0EKAASIQMGEiUDBhIpBAAAEiUE
+AAASKQUAAQESKQQIABIlBAgAEikDBhIgBAAAEiAECAASIAoAAhUSLQESMQ4OBCABAQgFIAEdCAgD
+BwEIBCAAEmEEIAASZQUgARJpCAUgAgEIHAMGEhUDBh0IBCABHAgEIAECCAQBAAAABgABEnUReQQg
+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
+AAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACwBFADAAABAFMAdAByAGkAbgBn
+AEYAaQBsAGUASQBuAGYAbwAAACwDAAABADAAMAAwADAAMAA0AGIAMAAAAIAAKwABAEYAaQBsAGUA
+RABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwAyAGIAOAA5AGIAMQBiAGIAZgBlADgAMwA0
+ADkAZAA2ADgANwA3ADUANgBkADQAMQAwADAAZAAwADAAZgA4ADMALgBjAHMAcAByAG8AagAAAAAA
+QAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADQANAA4ADQALgAzADAAOAA4
+ADMAAAAAAIAALwABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AMgBiADgAOQBiADEA
+YgBiAGYAZQA4ADMANAA5AGQANgA4ADcANwA1ADYAZAA0ADEAMAAwAGQAMAAwAGYAOAAzAC4AYwBz
+AHAAcgBvAGoALgBkAGwAbAAAAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAA
+QwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMQAyAAAAiAAvAAEATwByAGkAZwBpAG4AYQBs
+AEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADIAYgA4ADkAYgAxAGIAYgBmAGUAOAAzADQAOQBkADYA
+OAA3ADcANQA2AGQANAAxADAAMABkADAAMABmADgAMwAuAGMAcwBwAHIAbwBqAC4AZABsAGwAAAAA
+AHgAKwABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AMgBiADgAOQBiADEAYgBiAGYA
+ZQA4ADMANAA5AGQANgA4ADcANwA1ADYAZAA0ADEAMAAwAGQAMAAwAGYAOAAzAC4AYwBzAHAAcgBv
+AGoAAAAAAEQADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANAA0ADgA
+NAAuADMAMAA4ADgAMwAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4ANAA0ADgANAAuADMAMAA4ADgAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAYAAADAAAAOA2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement></arrayElements></property>
+<property id="7" name="VSTAProjectName" dataType="System.String" state="default" isArray="false" description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package." typeConverter="NOTBROWSABLE" UITypeEditor="" containsID="false" expressionType="None">SC_2b89b1bbfe8349d687756d4100d00f83</property>
+<property id="8" name="ScriptLanguage" dataType="System.String" state="default" isArray="false" description="Specifies the programming language used by the script." typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages, Microsoft.SqlServer.VSTAScriptingLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" UITypeEditor="" containsID="false" expressionType="None">CSharp</property>
+<property id="9" name="ReadOnlyVariables" dataType="System.String" state="default" isArray="false" description="Specifies a comma-separated list of read-only variables." typeConverter="" UITypeEditor="Microsoft.SqlServer.Dts.Pipeline.ScriptUIVariablePickerDlg, Microsoft.SqlServer.TxScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="10" name="ReadWriteVariables" dataType="System.String" state="default" isArray="false" description="Specifies a comma-separated list of read/write variables." typeConverter="" UITypeEditor="Microsoft.SqlServer.Dts.Pipeline.ScriptUIVariablePickerDlg, Microsoft.SqlServer.TxScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="11" name="BreakpointCollection" dataType="System.String" state="default" isArray="true" description="List of breakpoints present on the script." typeConverter="NOTBROWSABLE" UITypeEditor="" containsID="false" expressionType="None"><arrayElements arrayElementCount="0"/></property>
+<property id="12" name="UserComponentTypeName" dataType="System.String" state="default" isArray="false" description="" typeConverter="" UITypeEditor="" containsID="false" expressionType="None">Microsoft.SqlServer.Dts.Pipeline.ScriptComponentHost, Microsoft.SqlServer.TxScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property></properties>
+<connections>
+<connection id="13" name="ProsperLanding" description="" connectionManagerID="{A4D136E5-705D-460E-8DDC-2BC675E9099A}"/></connections>
+<outputs>
+<output id="4" name="Members" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="true" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="14" name="City" description="" lineageId="14" precision="0" scale="0" length="50" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="15" name="CreationDate" description="" lineageId="15" precision="0" scale="0" length="0" dataType="date" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="16" name="Description" description="" lineageId="16" precision="0" scale="0" length="0" dataType="text" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="17" name="Endorsements" description="" lineageId="17" precision="0" scale="0" length="0" dataType="text" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="19" name="GroupKey" description="" lineageId="19" precision="0" scale="0" length="23" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20" name="Images" description="" lineageId="20" precision="0" scale="0" length="0" dataType="text" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="21" name="Key" description="" lineageId="21" precision="0" scale="0" length="23" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="22" name="Roles" description="" lineageId="22" precision="0" scale="0" length="50" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="23" name="ScreenName" description="" lineageId="23" precision="0" scale="0" length="50" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="24" name="State" description="" lineageId="24" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="25" name="ModifiedDate" description="" lineageId="25" precision="0" scale="0" length="0" dataType="date" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+<output id="78" name="Endorsements" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="true" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="82" name="MemberKey" description="" lineageId="82" precision="0" scale="0" length="23" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="81" name="EndorsementMemberKey" description="" lineageId="81" precision="0" scale="0" length="23" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="80" name="Testimonial" description="" lineageId="80" precision="0" scale="0" length="0" dataType="text" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="79" name="CreationDate" description="" lineageId="79" precision="0" scale="0" length="0" dataType="date" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="28" name="Row Count" componentClassID="{150E6007-7C6A-4CC3-8FF3-FC73783A972E}" description="Counts the rows in a dataset." localeId="-1" usesDispositions="false" validateExternalMetadata="True" version="0" pipelineVersion="0" contactInfo="Row Count;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+<properties>
+<property id="29" name="VariableName" dataType="System.String" state="default" isArray="false" description="Specifies the variable to hold the row count." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">User::RowCount</property></properties>
+<inputs>
+<input id="30" name="Row Count Input 1" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><externalMetadataColumns isUsed="False"/></input>
+</inputs>
+<outputs>
+<output id="31" name="Row Count Output 1" description="" exclusionGroup="0" synchronousInputId="30" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="34" name="OLE DB Destination" componentClassID="{5A0B62E8-D91D-49F5-94A5-7BE58DE508F0}" description="OLE DB Destination" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="4" pipelineVersion="0" contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+<properties>
+<property id="35" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="36" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">[dbo].[Member]</property>
+<property id="37" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="38" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="39" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="40" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="41" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">3</property>
+<property id="43" name="FastLoadKeepIdentity" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="44" name="FastLoadKeepNulls" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="45" name="FastLoadOptions" dataType="System.String" state="default" isArray="false" description="Specifies options to be used with fast load.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">CHECK_CONSTRAINTS</property>
+<property id="46" name="FastLoadMaxInsertCommitSize" dataType="System.Int32" state="default" isArray="false" description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">2147483647</property></properties>
+<connections>
+<connection id="42" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{A4D136E5-705D-460E-8DDC-2BC675E9099A}"/></connections>
+<inputs>
+<input id="47" name="OLE DB Destination Input" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="Insert" errorRowDisposition="FailComponent" truncationRowDisposition="NotUsed"><inputColumns>
+<inputColumn id="66" name="" description="" lineageId="14" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="52" mappedColumnId="0"/>
+<inputColumn id="67" name="" description="" lineageId="15" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="53" mappedColumnId="0"/>
+<inputColumn id="68" name="" description="" lineageId="16" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="54" mappedColumnId="0"/>
+<inputColumn id="69" name="" description="" lineageId="17" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="55" mappedColumnId="0"/>
+<inputColumn id="70" name="" description="" lineageId="19" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="57" mappedColumnId="0"/>
+<inputColumn id="71" name="" description="" lineageId="20" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="58" mappedColumnId="0"/>
+<inputColumn id="72" name="" description="" lineageId="21" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="59" mappedColumnId="0"/>
+<inputColumn id="73" name="" description="" lineageId="22" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="60" mappedColumnId="0"/>
+<inputColumn id="74" name="" description="" lineageId="23" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="61" mappedColumnId="0"/>
+<inputColumn id="75" name="" description="" lineageId="24" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="62" mappedColumnId="0"/>
+<inputColumn id="76" name="" description="" lineageId="25" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="65" mappedColumnId="0"/>
+</inputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="52" name="City" description="" precision="0" scale="0" length="50" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="53" name="CreationDate" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="54" name="Description" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="55" name="Endorsements" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="56" name="FriendMemberKeys" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="57" name="GroupKey" description="" precision="0" scale="0" length="23" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="58" name="Images" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="59" name="Key" description="" precision="0" scale="0" length="23" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="60" name="Roles" description="" precision="0" scale="0" length="50" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="61" name="ScreenName" description="" precision="0" scale="0" length="50" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="62" name="State" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="63" name="SupportedGroupKeys" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="64" name="WatchListingKeys" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="65" name="ModifiedDate" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/></externalMetadataColumns></input>
+</inputs>
+<outputs>
+<output id="48" name="OLE DB Destination Error Output" description="" exclusionGroup="1" synchronousInputId="47" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="49" name="ErrorCode" description="" lineageId="49" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="50" name="ErrorColumn" description="" lineageId="50" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="84" name="OLE DB Destination 1" componentClassID="{5A0B62E8-D91D-49F5-94A5-7BE58DE508F0}" description="OLE DB Destination" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="4" pipelineVersion="0" contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+<properties>
+<property id="85" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="86" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">[dbo].[Member_EndorsementMemberMM]</property>
+<property id="87" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="88" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="89" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="90" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="91" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">3</property>
+<property id="93" name="FastLoadKeepIdentity" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="94" name="FastLoadKeepNulls" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="95" name="FastLoadOptions" dataType="System.String" state="default" isArray="false" description="Specifies options to be used with fast load.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">CHECK_CONSTRAINTS</property>
+<property id="96" name="FastLoadMaxInsertCommitSize" dataType="System.Int32" state="default" isArray="false" description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">2147483647</property></properties>
+<connections>
+<connection id="92" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{A4D136E5-705D-460E-8DDC-2BC675E9099A}"/></connections>
+<inputs>
+<input id="97" name="OLE DB Destination Input" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="Insert" errorRowDisposition="FailComponent" truncationRowDisposition="NotUsed"><inputColumns>
+<inputColumn id="106" name="" description="" lineageId="82" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="102" mappedColumnId="0"/>
+<inputColumn id="107" name="" description="" lineageId="81" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="103" mappedColumnId="0"/>
+<inputColumn id="108" name="" description="" lineageId="80" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="104" mappedColumnId="0"/>
+<inputColumn id="109" name="" description="" lineageId="79" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="105" mappedColumnId="0"/>
+</inputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="102" name="MemberKey" description="" precision="0" scale="0" length="23" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="103" name="EndorsementMemberKey" description="" precision="0" scale="0" length="23" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="104" name="Testimonial" description="" precision="0" scale="0" length="0" dataType="text" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="105" name="CreationDate" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/></externalMetadataColumns></input>
+</inputs>
+<outputs>
+<output id="98" name="OLE DB Destination Error Output" description="" exclusionGroup="1" synchronousInputId="97" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="99" name="ErrorCode" description="" lineageId="99" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="100" name="ErrorColumn" description="" lineageId="100" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+</components>
+<paths>
+<path id="32" name="Members" description="" startId="4" endId="30"/>
+<path id="51" name="Row Count Output 1" description="" startId="31" endId="47"/>
+<path id="101" name="Endorsements" description="" startId="78" endId="97"/>
+</paths></pipeline></DTS:ObjectData></DTS:Executable>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{33c14e84-21ff-4517-a96d-3d5d367e6b5d}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">Constraint</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{969E9E05-4B86-486B-8F91-E3B559187281}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="ObjectName">XML Reader Load</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{93F338F9-6DB2-4EA6-B7BA-7C1F9819BC45}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;TaskHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsDataFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;1000&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="19" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1461" scrolltop="53" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="21167" y="9181" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="0" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Executes a custom script." left="2461" top="1053" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/components/1" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Counts the rows in a dataset." left="3334" top="4365" logicalid="6" controlid="5" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/components/28" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="3861" top="1818" logicalid="7" controlid="6" masterid="0" hint1="0" hint2="0" width="1672" height="3047" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1"&gt;
+          &lt;adornment percentpos="64.4488579940417" controlid="16" width="1240" height="344" side="0" behavior="2" himetric="1947" distfromline="175" startobj="0" x="3718" y="3466" visible="1" allowoverlap="1" usepercent="1" /&gt;
+        &lt;/polyline&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/paths/32" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="1" destid="5" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="4260" y="2217" /&gt;
+      &lt;point x="4260" y="3291" /&gt;
+      &lt;point x="5133" y="3291" /&gt;
+      &lt;point x="5133" y="4365" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Destination" left="2884" top="6826" logicalid="11" controlid="10" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/components/34" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="4284" top="5130" logicalid="12" controlid="11" masterid="0" hint1="0" hint2="0" width="1249" height="2196" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/paths/51" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="5" destid="10" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="5133" y="5529" /&gt;
+      &lt;point x="5133" y="6177" /&gt;
+      &lt;point x="4683" y="6177" /&gt;
+      &lt;point x="4683" y="6826" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Destination" left="9869" top="4101" logicalid="15" controlid="14" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/components/84" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="4411" top="1818" logicalid="16" controlid="15" masterid="0" hint1="0" hint2="0" width="7657" height="2783" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1"&gt;
+          &lt;adornment percentpos="58.150424348844" controlid="17" width="1960" height="344" side="0" behavior="2" himetric="5083" distfromline="175" startobj="0" x="6816" y="3334" visible="1" allowoverlap="1" usepercent="1" /&gt;
+        &lt;/polyline&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}/paths/101" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="1" destid="14" sourceattachpoint="9" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="4810" y="2217" /&gt;
+      &lt;point x="4810" y="3159" /&gt;
+      &lt;point x="11668" y="3159" /&gt;
+      &lt;point x="11668" y="4101" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Text" left="3718" top="3466" logicalid="17" controlid="16" masterid="6" hint1="0" hint2="0" width="1240" height="344" noresize="1" nomove="0" nodefaultattachpoints="1" autodrag="1" usedefaultiddshape="1" selectable="0" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="1" groupcollapsed="0" tabstop="0" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00020000d804000058010000030000000000050000800800008001000000250001000000900144420100065461686f6d6107004d0065006d00620065007200730000000000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="AnnotationAdornment" value="-1" vartype="11" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Text" left="6816" top="3334" logicalid="18" controlid="17" masterid="15" hint1="0" hint2="0" width="1960" height="344" noresize="1" nomove="0" nodefaultattachpoints="1" autodrag="1" usedefaultiddshape="1" selectable="0" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="1" groupcollapsed="0" tabstop="0" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00020000a807000058010000030000000000050000800800008001000000250001000000900144420100065461686f6d610c0045006e0064006f007200730065006d0065006e007400730000000000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="AnnotationAdornment" value="-1" vartype="11" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortLeft&gt;1461&lt;/dwd:PersistedViewPortLeft&gt;&lt;dwd:PersistedViewPortTop&gt;53&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsDataFlowDiagram&gt;&lt;dwd:DtsComponentDesignerPropertiesList&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;84	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;34	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;34	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;84	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;/dwd:DtsComponentDesignerPropertiesList&gt;&lt;/TaskHost&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6FAED545-EB30-4AA9-8F29-B37E41919AE9}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;Endorsements&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-101</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{56FDA2EF-E003-4D3C-BD01-37C499E7F6BF}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;Members&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;Row Count Input 1&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-32</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{32FB606F-83C7-4056-8DBB-387CD5C50FF7}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;Row Count Output 1&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-51</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9D359169-3836-4E0D-9641-5F043699D440}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingTop&gt;531&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="9922" y="9948" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="400" top="2805" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Execute SQL Task" left="0" top="531" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{33c14e84-21ff-4517-a96d-3d5d367e6b5d}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="1400" top="1296" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1199" height="2009" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{969E9E05-4B86-486B-8F91-E3B559187281}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="1799" y="1695" /&gt;
+      &lt;point x="1799" y="2250" /&gt;
+      &lt;point x="2199" y="2250" /&gt;
+      &lt;point x="2199" y="2805" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{93F338F9-6DB2-4EA6-B7BA-7C1F9819BC45}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{30861E78-4A85-4519-8804-CA76D214D750}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PrecedenceConstraint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:EvalOp&gt;Constraint&lt;/dwd:EvalOp&gt;&lt;/PrecedenceConstraint&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{969E9E05-4B86-486B-8F91-E3B559187281}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C3B5EAC1-6DA4-4043-A286-1F17CDF781CD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;ConnectionManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DataSourceID&gt;Ben's PC&lt;/dwd:DataSourceID&gt;&lt;/ConnectionManager&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{A4D136E5-705D-460E-8DDC-2BC675E9099A}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9CDA27D6-C862-44DB-BFDD-E78424F65843}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingTop&gt;531&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="9922" y="9948" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="400" top="2805" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Execute SQL Task" left="0" top="531" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{33c14e84-21ff-4517-a96d-3d5d367e6b5d}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="1400" top="1296" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1199" height="2009" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{969E9E05-4B86-486B-8F91-E3B559187281}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="1799" y="1695" /&gt;
+      &lt;point x="1799" y="2250" /&gt;
+      &lt;point x="2199" y="2250" /&gt;
+      &lt;point x="2199" y="2805" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{FE2BA444-4E2A-44D0-8E9B-C6C192CD9EB6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>
