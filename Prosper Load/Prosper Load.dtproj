@@ -9,7 +9,12 @@
   </Database>
   <Cubes />
   <Dimensions />
-  <DataSources />
+  <DataSources>
+    <ProjectItem>
+      <Name>Ben's PC.ds</Name>
+      <FullPath>Ben's PC.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
   <DataSourceViews />
   <MiningModels />
   <Roles />
@@ -19,9 +24,21 @@
       <Name>Development</Name>
       <Options>
         <OutputPath>bin</OutputPath>
-        <ConnectionMappings />
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Ben's PC</Id>
+            <Name>Ben's PC</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=benc-pc;Password=;User ID=;Initial Catalog=Prosper</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
         <ConnectionProviderMappings />
-        <ConnectionSecurityMappings />
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Ben's PC</Id>
+            <Name>Ben's PC</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
         <DatabaseStorageLocations />
       </Options>
     </Configuration>
