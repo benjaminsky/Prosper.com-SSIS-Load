@@ -45,8 +45,13 @@
   </Configurations>
   <DTSPackages>
     <DtsPackage FormatVersion="3">
-      <Name>XML Reader Load.dtsx</Name>
-      <FullPath>XML Reader Load.dtsx</FullPath>
+      <Name>XML Reader Load Daily.dtsx</Name>
+      <FullPath>XML Reader Load Daily.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>XML Reader Load Full.dtsx</Name>
+      <FullPath>XML Reader Load Full.dtsx</FullPath>
       <References />
     </DtsPackage>
   </DTSPackages>
