@@ -49,7 +49,7 @@
       <FullPath>XML Reader Load Daily.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>XML Reader Load Full.dtsx</Name>
       <FullPath>XML Reader Load Full.dtsx</FullPath>
       <References />
