@@ -45,16 +45,6 @@
   </Configurations>
   <DTSPackages>
     <DtsPackage FormatVersion="3">
-      <Name>XML Load.dtsx</Name>
-      <FullPath>XML Load.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
-      <Name>CSV Load.dtsx</Name>
-      <FullPath>CSV Load.dtsx</FullPath>
-      <References />
-    </DtsPackage>
-    <DtsPackage FormatVersion="3">
       <Name>XML Reader Load.dtsx</Name>
       <FullPath>XML Reader Load.dtsx</FullPath>
       <References />
