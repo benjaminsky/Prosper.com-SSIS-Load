@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Prosper Data Export - Schema - Version: 1.0 - Generated: 2012-04-14T04:34:02 -->
+<!-- Subject to the Prosper API Services Terms of Use Agreement located at http://www.prosper.com/tools/APITermsOfUse.aspx -->
+<!-- Note: The sql namespace (urn:schemas-microsoft-com:xml-sql) is optional and can be removed along with its references (sql:*) -->
+<xsd:schema id="ProsperDataExportSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sql="urn:schemas-microsoft-com:mapping-schema">
+  <xsd:element name="ProsperDataExport" sql:is-constant="1">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Listings" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Listing" minOccurs="0" maxOccurs="unbounded" sql:relation="[Listing]">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="AmountFunded" type="xsd:decimal" />
+                    <xsd:element name="AmountRemaining" type="xsd:decimal" />
+                    <xsd:element name="AmountRequested" type="xsd:decimal" />
+                    <xsd:element name="BankDraftFeeAnnualRate" type="xsd:decimal" />
+                    <xsd:element name="BidCount" type="xsd:integer" />
+                    <xsd:element name="BidMaximumRate" type="xsd:decimal" />
+                    <xsd:element name="BorrowerCity" type="xsd:string" />
+                    <xsd:element name="BorrowerMaximumRate" type="xsd:decimal" />
+                    <xsd:element name="BorrowerRate" type="xsd:decimal" />
+                    <xsd:element name="BorrowerState" type="xsd:string" />
+                    <xsd:element name="Category" type="xsd:integer" />
+                    <xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="CreditGrade" type="xsd:string" />
+                    <xsd:element name="ProsperRating" type="xsd:string" />
+                    <xsd:element name="DebtToIncomeRatio" type="xsd:decimal" />
+                    <xsd:element name="Description" type="xsd:string" />
+                    <xsd:element name="Duration" type="xsd:integer" />
+                    <xsd:element name="EndDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="FundingOption" type="xsd:string" />
+                    <xsd:element name="GroupKey" type="xsd:string" />
+                    <xsd:element name="GroupLeaderRewardRate" type="xsd:decimal" />
+                    <xsd:element name="HasVerifiedBankAccount" type="xsd:integer" />
+                    <xsd:element name="Images" type="xsd:string" />
+                    <xsd:element name="IsBorrowerHomeowner" type="xsd:boolean" />
+                    <xsd:element name="Key" type="xsd:string" />
+                    <xsd:element name="LenderRate" type="xsd:decimal" />
+                    <xsd:element name="ListingNumber" type="xsd:integer" />
+                    <xsd:element name="MemberKey" type="xsd:string" />
+                    <xsd:element name="PercentFunded" type="xsd:decimal" />
+                    <xsd:element name="StartDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="Status" type="xsd:string" />
+                    <xsd:element name="Title" type="xsd:string" />
+                    <xsd:element name="ModifiedDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="ProductSpecID" type="xsd:integer" />
+                    <xsd:element name="LoanTermInMonths" type="xsd:integer" />
+                    <xsd:element name="Term" type="xsd:integer" />
+                    <xsd:element name="EstimatedLoss" type="xsd:decimal" />
+                    <xsd:element name="LenderYield" type="xsd:decimal" />
+                    <xsd:element name="EffectiveYield" type="xsd:decimal" />
+                    <xsd:element name="EstimatedReturn" type="xsd:decimal" />
+                    <xsd:element name="VerificationStage" type="xsd:integer" />
+                    <xsd:element name="ActiveProsperLoans" type="xsd:integer" />
+                    <xsd:element name="TotalProsperLoans" type="xsd:integer" />
+                    <xsd:element name="ProsperPrincipalBorrowed" type="xsd:decimal" />
+                    <xsd:element name="ProsperPrincipalOutstanding" type="xsd:decimal" />
+                    <xsd:element name="OnTimeProsperPayments" type="xsd:integer" />
+                    <xsd:element name="ProsperPaymentsLessThanOneMonthLate" type="xsd:integer" />
+                    <xsd:element name="ProsperPaymentsOneMonthPlusLate" type="xsd:integer" />
+                    <xsd:element name="TotalProsperPaymentsBilled" type="xsd:integer" />
+                    <xsd:element name="ProsperScore" type="xsd:integer" />
+                    <xsd:element name="CreditScoreRangeLower" type="xsd:integer" />
+                    <xsd:element name="CreditScoreRangeUpper" type="xsd:integer" />
+                    <xsd:element name="MonthlyLoanPayment" type="xsd:decimal" />
+                    <xsd:element name="TradesOpenedLast6Months" type="xsd:string" />
+                    <xsd:element name="AvailableBankcardCredit" type="xsd:string" />
+                    <xsd:element name="TotalInquiries" type="xsd:string" />
+                    <xsd:element name="TotalTrades" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CreditProfiles" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CreditProfile" minOccurs="0" maxOccurs="unbounded" sql:relation="[CreditProfile]">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="MemberKey" type="xsd:string" />
+                    <xsd:element name="ListingKey" type="xsd:string" />
+                    <xsd:element name="CreditGrade" type="xsd:string" />
+                    <xsd:element name="CurrentDelinquencies" type="xsd:integer" />
+                    <xsd:element name="DelinquenciesLast7Years" type="xsd:integer" />
+                    <xsd:element name="PublicRecordsLast10Years" type="xsd:integer" />
+                    <xsd:element name="FirstRecordedCreditLine" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="TotalCreditLines" type="xsd:integer" />
+                    <xsd:element name="InquiriesLast6Months" type="xsd:integer" />
+                    <xsd:element name="CreationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="AmountDelinquent" type="xsd:decimal" />
+                    <xsd:element name="PublicRecordsLast12Months" type="xsd:integer" />
+                    <xsd:element name="CurrentCreditLines" type="xsd:integer" />
+                    <xsd:element name="OpenCreditLines" type="xsd:integer" />
+                    <xsd:element name="RevolvingCreditBalance" type="xsd:decimal" />
+                    <xsd:element name="BankcardUtilization" type="xsd:decimal" />
+                    <xsd:element name="DatePulled" type="xsd:dateTime" sql:datatype="dateTime" />
+                    <xsd:element name="EmploymentStatus" type="xsd:string" />
+                    <xsd:element name="LengthStatusMonths" type="xsd:integer" />
+                    <xsd:element name="Income" type="xsd:integer" />
+                    <xsd:element name="BorrowerOccupation" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="LoanPerformances" minOccurs="0" maxOccurs="1" sql:is-constant="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="LoanPerformance" minOccurs="0" maxOccurs="unbounded" sql:relation="[LoanPerformance]">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="LoanKey" type="xsd:string" />
+                    <xsd:element name="CycleNumber" type="xsd:integer" />
+                    <xsd:element name="Status" type="xsd:string" />
+                    <xsd:element name="DPD" type="xsd:integer" />
+                    <xsd:element name="PrincipalBalance" type="xsd:decimal" />
+                    <xsd:element name="NetDefaults" type="xsd:decimal" />
+                    <xsd:element name="ObservationDate" type="xsd:dateTime" sql:datatype="dateTime" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
