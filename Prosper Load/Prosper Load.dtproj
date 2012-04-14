@@ -59,5 +59,10 @@
       <FullPath>XML Reader Load Full - Bids.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>XML Reader Load Full - Private Data.dtsx</Name>
+      <FullPath>XML Reader Load Full - Private Data.dtsx</FullPath>
+      <References />
+    </DtsPackage>
   </DTSPackages>
 </Project>
