@@ -10,8 +10,8 @@
 <DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
 <DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
 <DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
-<DTS:Property DTS:Name="VersionBuild">83</DTS:Property>
-<DTS:Property DTS:Name="VersionGUID">{2E620743-5578-4F6C-B7BB-49E78154733A}</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">85</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{D0FE9376-4A90-41CF-A933-E5B3FB6A3163}</DTS:Property>
 <DTS:Property DTS:Name="EnableConfig">0</DTS:Property>
 <DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
 <DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
@@ -23,7 +23,7 @@
 <DTS:Property DTS:Name="DTSID">{A4D136E5-705D-460E-8DDC-2BC675E9099A}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
-<DTS:Property DTS:Name="Retain">0</DTS:Property><DTS:Password DTS:Name="Password" Sensitive="1" Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfwZtv8qmA02sU62DxQKAcgAAAAAIAAAARABUAFMAAAADZgAAqAAAABAAAAA03gEYv0tTpJzQFDoY3gY0AAAAAASAAACgAAAAEAAAAFoslrspn7oPB6r0sbpfEWQgAAAAjATUcUNPf2NwLCzw+GnXpVbreeP5wbluc5DsXon7O+IUAAAAOJ2kDlNdH2rlBHpGc36yQEhOaZk</DTS:Password>
+<DTS:Property DTS:Name="Retain">0</DTS:Property><DTS:Password DTS:Name="Password" Sensitive="1" Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfwZtv8qmA02sU62DxQKAcgAAAAAIAAAARABUAFMAAAADZgAAqAAAABAAAAB0MqtsyG+4FVppWAc9ffmWAAAAAASAAACgAAAAEAAAAIKn/neYTNe++0affPF9msogAAAAML+HkAvYCC1rJidQIQeEpQv8oMg/QfXroFQD0kHfsXIUAAAAkjMarKUteOQ2sHIZzCIyWycSyiM</DTS:Password>
 <DTS:Property DTS:Name="ConnectionString">Data Source=benc-pc;User ID=SSIS;Initial Catalog=ProsperLanding;Provider=SQLNCLI10.1;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
 <DTS:Property DTS:Name="LastModifiedProductVersion">10.0.2531.0</DTS:Property>
 <DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
@@ -222,6 +222,7 @@ public class ScriptMain : UserComponent
     }
     public void CreateListingOutputRow(XElement x)
     {
+        
         ListingBuffer.AddRow();
         if (x.Element("AmountFunded").Value.Length > 0) ListingBuffer.AmountFunded = Convert.ToDecimal(x.Element("AmountFunded").Value);
         if (x.Element("AmountRemaining").Value.Length > 0) ListingBuffer.AmountRemaining = Convert.ToDecimal(x.Element("AmountRemaining").Value);
@@ -2800,7 +2801,7 @@ class X
 ]]></arrayElement></arrayElements></property>
 <property id="6" name="BinaryCode" dataType="System.String" state="cdata" isArray="true" description="Stores the binary representation of the component" typeConverter="" UITypeEditor="" containsID="false" expressionType="None"><arrayElements arrayElementCount="2"><arrayElement dataType="System.String"><![CDATA[\bin\release\sc_2b89b1bbfe8349d687756d4100d00f83.csproj.dll]]></arrayElement><arrayElement dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAF6viU8AAAAAAAAAAOAAAiELAQgAAIYAAAAIAAAAAAAAfqQA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHuwiU8AAAAAAAAAAOAAAiELAQgAAIYAAAAIAAAAAAAAfqQA
 AAAgAAAAwAAAAABAAAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAAAAAQAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAACykAABPAAAAAMAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAOAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3141,7 +3142,7 @@ AQEAnAAvAQEAnQAxAQEAngAzAQEAnwA1AQEAoAA3AQEAoQA5AQEApgA7AQEApwA9AQEAqAA/AQEA
 qQBBAQEAqgBDAQEAqwBFAQEArABHAQEArQBJAQEArgBLAQEArwBNAQEAsABPAQEAsQBRAQEAsgBT
 AQEAswBVAQIAxQBXAQIAxwBZAQIAyQBbAQEAywBdAQIAygBdAQIAzABfAQIA1QBhAQIA2ABjAQIA
 3gBlAQIA4QBnAQwApAFDAAwApgGFAAwAqAFNAAwAqgFFAAwArAGHAAwArgFPAAwAsAGJAA0AtgFD
-AA0AuAGFAA0AugFNAA0AvAFFAA0AvgGHAA0AwAFPAA0AwgGJABsBOAFmAXcBBIAAAAEAAACHEX9O
+AA0AuAGFAA0AugFNAA0AvAFFAA0AvgGHAA0AwAFPAA0AwgGJABsBOAFmAXcBBIAAAAEAAACHEQ1P
 AAAAAAAAwiEAAAoAAAAAAAAAAAAAAAEA6wAAAAAAAgAAAAAAAAAAAAAACgBGAQAAAAACAAAAAAAA
 AAAAAAAKAE8BAAAAAAoAAAAAAAAAAAAAAAEAigEAAAAAAwAFAAAAAAAAAAAACgDoHQAAAAAKAAAA
 AAAAAAAAAAABAGQeAAAAAAMABQAAAAAAAAAAAAoAjyIAAAAACgAAAAAAAAAAAAAAAQA1JAAAAAAC
@@ -3386,7 +3387,7 @@ AGwAYQBiAGwAZQBCAGEAbgBrAGMAYQByAGQAQwByAGUAZABpAHQAAB1UAG8AdABhAGwASQBuAHEA
 dQBpAHIAaQBlAHMAABdUAG8AdABhAGwAVAByAGEAZABlAHMAACVYAE0ATABGAGkAbABlAE4AYQBt
 AGUAUAByAGkAdgBhAHQAZQAAf1MAQwBfADIAYgA4ADkAYgAxAGIAYgBmAGUAOAAzADQAOQBkADYA
 OAA3ADcANQA2AGQANAAxADAAMABkADAAMABmADgAMwAuAGMAcwBwAHIAbwBqAC4AUAByAG8AcABl
-AHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAABPgepEXhvzRpk6JQkF+/rLAAiJhF3NgIDM
+AHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAADQR7Q3XxuNT5P4XEci81BkAAiJhF3NgIDM
 kQi3elxWGTTgiQcgAgESFR0IBCABAQ4EIAEBAgQgAQEIBSABAREZBSABAREdBCABAQwDIAABAyAA
 AgMoAA4DKAACAygACAQoABEZBCgAER0DKAAMBCAAEiEEKAASIQMGEhwDBhIgAwYSCAMGEgwDBhIQ
 CSADAQgdCB0SFQYGFRIlAQ4FIAEBEikDBhIJBSABARIJBCAAEi0EKAASLQMgAA4DBhIxAwYSNQQA
@@ -3411,13 +3412,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFjAAADwAwAAAAAAAAAAAADwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEAf06HEQAAAQB/TocRPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEADU+HEQAAAQANT4cRPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEUAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAALAMAAAEAMAAwADAA
 MAAwADQAYgAwAAAAgAArAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAQwBf
 ADIAYgA4ADkAYgAxAGIAYgBmAGUAOAAzADQAOQBkADYAOAA3ADcANQA2AGQANAAxADAAMABkADAA
 MABmADgAMwAuAGMAcwBwAHIAbwBqAAAAAABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAA
-ADEALgAwAC4ANAA0ADgANwAuADIAMAAwADkANQAAAAAAgAAvAAEASQBuAHQAZQByAG4AYQBsAE4A
+ADEALgAwAC4ANAA0ADgANwAuADIAMAAyADMANwAAAAAAgAAvAAEASQBuAHQAZQByAG4AYQBsAE4A
 YQBtAGUAAABTAEMAXwAyAGIAOAA5AGIAMQBiAGIAZgBlADgAMwA0ADkAZAA2ADgANwA3ADUANgBk
 ADQAMQAwADAAZAAwADAAZgA4ADMALgBjAHMAcAByAG8AagAuAGQAbABsAAAAAABIABIAAQBMAGUA
 ZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAx
@@ -3426,8 +3427,8 @@ OQBiADEAYgBiAGYAZQA4ADMANAA5AGQANgA4ADcANwA1ADYAZAA0ADEAMAAwAGQAMAAwAGYAOAAz
 AC4AYwBzAHAAcgBvAGoALgBkAGwAbAAAAAAAeAArAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAA
 AABTAEMAXwAyAGIAOAA5AGIAMQBiAGIAZgBlADgAMwA0ADkAZAA2ADgANwA3ADUANgBkADQAMQAw
 ADAAZAAwADAAZgA4ADMALgBjAHMAcAByAG8AagAAAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUA
-cgBzAGkAbwBuAAAAMQAuADAALgA0ADQAOAA3AC4AMgAwADAAOQA1AAAAAABIAA8AAQBBAHMAcwBl
-AG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA0ADQAOAA3AC4AMgAwADAAOQA1AAAA
+cgBzAGkAbwBuAAAAMQAuADAALgA0ADQAOAA3AC4AMgAwADIAMwA3AAAAAABIAA8AAQBBAHMAcwBl
+AG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA0ADQAOAA3AC4AMgAwADIAMwA3AAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3981,28 +3982,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement></arra
 &lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortLeft&gt;-3829&lt;/dwd:PersistedViewPortLeft&gt;&lt;dwd:PersistedViewPortTop&gt;-1963&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsDataFlowDiagram&gt;&lt;dwd:DtsComponentDesignerPropertiesList&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;34	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;84	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;520	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;520	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;369	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;214	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;741	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;316	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;644	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;128	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;34	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;875	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;145	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;316	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;145	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;263	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;369	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;724	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;84	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;263	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;214	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;177	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;644	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;875	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;741	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;423	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;724	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;177	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;423	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;128	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;/dwd:DtsComponentDesignerPropertiesList&gt;&lt;/TaskHost&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{33F91E8C-7802-4D81-9739-EBF3C9E0CA26}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D87A300F-EFCA-4A71-A006-1B42FF3C03D2}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
 <DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;CreditProfile&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-758</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{EE422FBD-5848-41E6-ADA6-322A0266F300}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C4714495-144F-4A5D-B8BF-C48ED49D786B}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
 <DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;LoanPerformance&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-801</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{A38E486F-815C-4499-A50A-B20660E2CD5D}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{57DFEB1D-3D50-430C-AA98-C6945DD0A70A}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
 <DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;Listing&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{156A2CF1-F0BF-4D21-A989-326B1B6EFDB4}-892</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{6839361A-2378-4468-919C-F8502C6AC8F4}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{EA661EF3-68AA-4D27-8D87-5909F05BB356}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
@@ -4065,21 +4066,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement></arra
 &lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{870C50A6-C1CD-4C4F-8E7F-E7AD04F532AE}</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{C65B606F-6B6F-455C-8CEB-15F485D5C0CA}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{BD38FDDF-D61C-40A1-AAE8-B702CBE61FBD}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
 <DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PrecedenceConstraint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:EvalOp&gt;Constraint&lt;/dwd:EvalOp&gt;&lt;/PrecedenceConstraint&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{969E9E05-4B86-486B-8F91-E3B559187281}</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{F49D67D3-38FA-4DA2-90C9-EBC755A00A5E}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C2B10C5E-DF6D-460E-90DA-E982D5EC5955}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
 <DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;ConnectionManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DataSourceID&gt;Ben's PC&lt;/dwd:DataSourceID&gt;&lt;/ConnectionManager&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">{A4D136E5-705D-460E-8DDC-2BC675E9099A}</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{773A9E97-A8A8-4022-92ED-B2278905D5A5}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{780476C2-C32F-4617-A941-99C17958D7D0}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
 <DTS:PackageVariable>
@@ -4142,6 +4143,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement></arra
 &lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
 <DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
 <DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
-<DTS:Property DTS:Name="DTSID">{592CD638-394A-4165-8382-117390566BD5}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6A4347EE-96E8-4869-9CFE-9DAFC0798831}</DTS:Property>
 <DTS:Property DTS:Name="Description"></DTS:Property>
 <DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>
