@@ -54,12 +54,12 @@
       <FullPath>XML Reader Load Full.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>XML Reader Load Full - Bids.dtsx</Name>
       <FullPath>XML Reader Load Full - Bids.dtsx</FullPath>
       <References />
     </DtsPackage>
-    <DtsPackage FormatVersion="0">
+    <DtsPackage FormatVersion="3">
       <Name>XML Reader Load Full - Private Data.dtsx</Name>
       <FullPath>XML Reader Load Full - Private Data.dtsx</FullPath>
       <References />
