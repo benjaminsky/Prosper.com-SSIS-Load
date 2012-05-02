@@ -64,5 +64,15 @@
       <FullPath>XML Reader Load Full - Private Data.dtsx</FullPath>
       <References />
     </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Cleanup.dtsx</Name>
+      <FullPath>Cleanup.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>Update Loan Performance.dtsx</Name>
+      <FullPath>Update Loan Performance.dtsx</FullPath>
+      <References />
+    </DtsPackage>
   </DTSPackages>
 </Project>
