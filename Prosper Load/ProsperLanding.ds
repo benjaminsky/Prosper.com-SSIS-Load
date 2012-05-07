@@ -3,7 +3,7 @@
   <Name>ProsperLanding</Name>
   <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI10.1;Data Source=benc-pc;Password=;User ID=;Initial Catalog=ProsperLanding</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI10.1;Data Source=benc-pc;Persist Security Info=True;Password=;User ID=;Initial Catalog=ProsperLanding</ConnectionString>
   <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
   <Timeout>PT0S</Timeout>
 </DataSource>

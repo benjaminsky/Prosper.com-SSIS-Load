@@ -29,3 +29,4 @@ _ReSharper*/
 Prosper Load/Source Data/*.xml
 Prosper Load/Source Data/ProsperXMLtoCSV.jar
 Prosper Load/Source Data/*.zip
+Prosper Load/Source Data/AuthDownload*.aspx
